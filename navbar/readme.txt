@@ -8,6 +8,10 @@ To include the navbar in your page,
 
     (2) Finally, include below JS and CSS scripts inside <head> tag of your page.
 
+        <!-- CSS Main-->
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- CSS Main-->
+
         <!-- CSS Reset -->
         <link rel="stylesheet" href="./css/reset.css">
         <!-- CSS Reset -->
