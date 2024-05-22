@@ -21,22 +21,22 @@
 
     <div class="container doc">
 
-        <form action="/" method="post">
+        <form action="/" method="post" id="signup">
 
             <label for="Name">Full Name</label> <br>
-            <input type="text" placeholder="Enter the Full name"> <br>
+            <input type="text" placeholder="Enter the Full name" class="box"> <br>
 
             <label for="email">email</label> <br>
-            <input type="text"> <br>
-
+            <input type="text" class="box"> <br>
+            
             <label for="mobile">Mobile Number</label> <br>
-            <input type="tel"> <br>
+            <input type="tel" class="box"> <br>
 
             <label for="experience">Experience</label> <br>
-            <input type="text" placeholder="In years"> <br>
+            <input type="text" placeholder="In years" class="box"> <br>
 
             <label for="hospital">Nearest Hospital</label> <br>
-            <input type="text" placeholder="Or current place of residence"> <br>
+            <input type="text" placeholder="Or current place of residence" class="box"> <br>
 
             <!-- Gender checkout -->
             <label for="sex">Gender</label> <br>
@@ -48,7 +48,7 @@
             <!-- Selecting specialty of the Doctor -->
             <label for="specialty">Choose your specialty:</label> <br>
 
-            <select id="specialty" name="specialty" class="scrollable-dropdown">
+            <select id="specialty" name="specialty" class="scrollable-dropdown container">
                 <option value="allergy-immunology">Allergy and Immunology</option>
                 <option value="anesthesiology">Anesthesiology</option>
                 <option value="cardiology">Cardiology</option>
@@ -84,9 +84,11 @@
 
             <!-- To upload the digree and license Certificates -->
             <label for="digree">Upload your license and Certificates</label> <br>
-            <input type="file" > <br>
+            <input type="file" > <br> <br>
         
+            <div class="submit">
             <input type="submit" value="Submit">
+            </div>
         </form>
 
     </div>    

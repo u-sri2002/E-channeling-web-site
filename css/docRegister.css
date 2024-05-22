@@ -1,7 +1,7 @@
 
 body{
     margin-top: 2%;
-    background-color: #b0c5ff;
+    background-color: #ffffff;
 }
 
 h1{
@@ -9,6 +9,7 @@ h1{
     text-align: center;
     font-weight: 400;
     margin-bottom: 2%;
+    text-transform: uppercase;
 }
 
 .doc{
@@ -25,4 +26,38 @@ h1{
  
 .dropdown > .btn{
     background-color: rgb(108, 140, 110);
+}
+
+
+
+.box{
+
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid rgb(89, 82, 82);
+}
+
+.submit{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.submit > input{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #4681f4;
+    color: white;
+    border: none;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+#signup label{
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 500;
 }
