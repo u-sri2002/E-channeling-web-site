@@ -1,0 +1,28 @@
+
+body{
+    margin-top: 2%;
+    background-color: #b0c5ff;
+}
+
+h1{
+    font-family: Poppins;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.doc{
+
+    padding: 3%;
+    width: 50%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.dropdown{
+    margin-top: 15px;
+}
+ 
+.dropdown > .btn{
+    background-color: rgb(108, 140, 110);
+}
