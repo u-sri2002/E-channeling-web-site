@@ -31,19 +31,7 @@
 }
 
 .hero .left button {
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 50px;
     margin-top: 40px;
-    font-size: 20px;
-    background-color: #5e89d5;
-    font-weight: 500;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-.hero .left button:hover {
-    background-color: #567ab9;
 }
 
 .hero .right {
@@ -60,7 +48,55 @@
 }
 
 .hero .right img {
-    height: 450px;
+    height: 400px;
+}
+
+.channel-doctor-stripe {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.channel-doctor-stripe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.channel-doctor-stripe h2 {
+    font-weight: 500;
+    color: #33cc82;
+    font-size: 30px;
+}
+
+.channel-doctor-stripe button {
+    margin-top: 20px;
+}
+
+.btn {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn.green {
+    background-color: #33cc82;
+}
+
+.btn.blue {
+    background-color: #5e89d5;
+}
+
+.btn.green:hover {
+    background-color: #2fae70;
+}
+
+.btn.blue:hover {
+    background-color: #567ab9;
 }
 
 /* Homepage >>*/
