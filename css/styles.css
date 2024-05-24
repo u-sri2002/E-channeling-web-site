@@ -61,6 +61,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: #c6f1dc;
 }
 
 .channel-doctor-stripe h2 {
@@ -75,7 +76,7 @@
 
 .btn {
     width: fit-content;
-    padding: 10px 20px;
+    padding: 7px 14px;
     border-radius: 50px;
     font-size: 20px;
     font-weight: 500;
@@ -97,6 +98,48 @@
 
 .btn.blue:hover {
     background-color: #567ab9;
+}
+
+.section {
+    padding: 30px 40px;
+    width: 100%;
+}
+
+.section .title {
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.section.specialists {
+    background-color: #e7f9f9;
+}
+
+.section.specialists .title {
+    color: #5e89d5;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 30%;
+}
+
+.card {
+    width: 220px;
+    height: 250px;
+    background-color: #5e89d5;
+    margin: 20px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 10px 1px rgba(42, 80, 105, 0.552);
 }
 
 /* Homepage >>*/
