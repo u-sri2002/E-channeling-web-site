@@ -1,24 +1,26 @@
 footer{
     margin: 0;
     padding: 2%;
-    background-color: #01204E;
+    background-color: #565759;
     color: white;
+    font-family: Calibri;
 
 }
 
-img{
+.f-logo{
     margin: 1%;
     width: 150px;
     height: 150px;
     float:left
 }
 
-.description{
+.f-description{
     margin-right: 2%;
     padding-right: 6%;
+ 
 }
 
-.social-media{
+.f-social-media{
     text-align: center;
     align-items: center;
 }
@@ -30,7 +32,7 @@ svg{
     vertical-align: middle; 
 }
 
-.icons a{
+.f-icons a{
     text-decoration: none;
 }
 
