@@ -1,145 +1,69 @@
+/* << custom buttons */
+
+.ex-btn {
+    width: fit-content;
+    padding: 0.3rem 0.6rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0.6rem auto;
+}
+
+.ex-btn.green {
+    background-color: #33cc82;
+}
+
+.ex-btn.blue {
+    background-color: #5e89d5;
+}
+
+.ex-btn.green:hover {
+    background-color: #2fae70;
+}
+
+.ex-btn.blue:hover {
+    background-color: #567ab9;
+}
+
+/* custom buttons >> */
+
+
 /* << Homepage */
 
 .hero {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
     background-image: linear-gradient(to right, #f3fff5, #e4eeff);
-    padding: 30px 40px 0 40px;
 }
 
-.hero .left {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-}
-
-.hero .left h1 {
+.hero .left-side h1 {
     color: #5e89d5;
     font-weight: 600;
-    font-size: 40px;
     line-height: 1.4;
 }
 
-.hero .left p {
+.hero .left-side p {
     font-weight: 300;
     color: rgba(0, 0, 0, 0.758);
-    font-size: 18px;
     line-height: 1.6;
-    margin-top: 30px;
     text-align: justify;
 }
 
-.hero .left button {
-    margin-top: 40px;
-}
-
-.hero .right {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hero .right .hotline {
+.hero .right-side .hotline {
     color: #5e89d5;
-    font-size: 30px;
     font-weight: 400;
 }
 
-.hero .right img {
-    height: 400px;
+.hero .right-side img {
+    height: 360px;
 }
 
 .channel-doctor-stripe {
-    width: 100%;
-    background-color: #ffffff;
-}
-
-.channel-doctor-stripe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
     background-color: #c6f1dc;
 }
 
 .channel-doctor-stripe h2 {
     font-weight: 500;
     color: #33cc82;
-    font-size: 30px;
-}
-
-.channel-doctor-stripe button {
-    margin-top: 20px;
-}
-
-.btn {
-    width: fit-content;
-    padding: 7px 14px;
-    border-radius: 50px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-.btn.green {
-    background-color: #33cc82;
-}
-
-.btn.blue {
-    background-color: #5e89d5;
-}
-
-.btn.green:hover {
-    background-color: #2fae70;
-}
-
-.btn.blue:hover {
-    background-color: #567ab9;
-}
-
-.section {
-    padding: 30px 40px;
-    width: 100%;
-}
-
-.section .title {
-    font-weight: 600;
-    font-size: 36px;
-    text-align: center;
-    margin: 20px auto;
-}
-
-.section.specialists {
-    background-color: #e7f9f9;
-}
-
-.section.specialists .title {
-    color: #5e89d5;
-}
-
-.card-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 30%;
-}
-
-.card {
-    width: 220px;
-    height: 250px;
-    background-color: #5e89d5;
-    margin: 20px 40px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.card:hover {
-    box-shadow: 1px 1px 10px 1px rgba(42, 80, 105, 0.552);
 }
 
 /* Homepage >>*/
