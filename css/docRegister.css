@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient(to right, #f3fff5, #e4eeff);
+}
+
+.r-hero{
+    font-family: Poppins;
+    text-align: center;
+    margin: 3%;
+    padding: 2%;
+}
+
+.r-title{
+    margin-bottom: 2%;
+    color: #396CCD;
+}
+
+.r-title span{
+    color: #00BF63;
+    font-weight: 500;
+}
+
+.r-hero p{
+    padding: 0 5%;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
