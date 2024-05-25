@@ -1,0 +1,41 @@
+footer{
+    margin: 0;
+    padding: 2%;
+    background-color: #01204E;
+    color: white;
+
+}
+
+img{
+    margin: 1%;
+    width: 150px;
+    height: 150px;
+    float:left
+}
+
+.description{
+    margin-right: 2%;
+    padding-right: 6%;
+}
+
+.social-media{
+    text-align: center;
+    align-items: center;
+}
+
+svg{
+    width: 30px;
+    margin: 2%;
+    fill: white;
+    vertical-align: middle; 
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+hr{
+    background-color: wheat;
+    border: solid;
+    margin: 1% 5%;
+}
