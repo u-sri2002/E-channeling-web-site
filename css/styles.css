@@ -2,12 +2,13 @@
 
 .ex-btn {
     width: fit-content;
-    padding: 0.3rem 0.6rem;
+    padding: 0.4rem 0.6rem;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color: #ffffff;
     cursor: pointer;
     margin: 0.6rem auto;
+    border-radius: 20px;
 }
 
 .ex-btn.green {
@@ -65,5 +66,87 @@
     font-weight: 500;
     color: #33cc82;
 }
+
+.sector.specialists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddeaef;
+    padding: 1.4rem;
+}
+
+.sector.specialists .sector-title{
+    color: rgb(53, 76, 100);
+    font-weight: 600px;
+    font-size: 2.4rem;
+    margin: 1.4rem auto;
+}
+
+.ex-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ex-card-holder {    
+    padding: 1.4rem 1.4rem;
+}
+
+.ex-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 1.4rem;
+    /* background-color: rgb(181, 202, 221); */
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    color: #354c64;
+    height: 350px;
+}
+
+.ex-card .ex-card-description {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.ex-card-image span {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.ex-card-title {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+}
+
+.ex-card-description {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.ex-card-image img{
+    width: 8rem;
+}
+
+.ex-see-more-text {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin: 0.6rem;
+}
+
+.ex-see-more-icon img {
+    width: 40px;
+}
+
+.ex-card.final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 /* Homepage >>*/
