@@ -136,11 +136,6 @@
     margin: 1rem auto;
 }
 
-.ex-card-description {
-    font-weight: 300;
-    font-size: 1rem;
-}
-
 .ex-card-image img{
     width: 8rem;
 }
@@ -161,6 +156,74 @@
     align-items: center;
     justify-content: center;
 }
+
+
+/* << Services */
+
+.sector.ser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b9e0cc;
+    padding: 1.4rem;
+}
+
+.ser-title {
+    color: rgb(38, 98, 48);
+    font-weight: 600px;
+    font-size: 2.4rem;
+    margin: 1.4rem auto;
+}
+
+.ser-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.ser-card-holder {    
+    padding: 1.4rem 1.4rem;
+}
+
+.ser-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.2rem 1.4rem;
+    /* background-color: rgb(181, 202, 221); */
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    color: #356441;
+    height: 120px;
+}
+
+.ser-card-image img{
+    width: 6rem;
+}
+
+.ser-card-title {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+}
+
+.ser-card.final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ser-see-more-text {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 0.4rem;
+}
+
+.ser-see-more-icon img {
+    width: 30px;
+}
+
+/* Services >> */
 
 
 /* << join-us */
@@ -184,6 +247,7 @@ section.join-us p {
 }
 
 /* join-us >> */
+
 
 /* << download-app */
 .download-app {
@@ -220,6 +284,8 @@ section.join-us p {
 }
 
 /* download-app >> */
+
+
 
 
 /* Homepage >>*/
