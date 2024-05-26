@@ -225,6 +225,60 @@
 
 /* Services >> */
 
+/* << facilities */
+
+.sector.fac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fcfcfc;
+    padding: 1.4rem;
+}
+
+.fac-title {
+    color: rgb(63, 64, 63);
+    font-weight: 600px;
+    font-size: 2.4rem;
+    margin: 1.4rem auto;
+}
+
+.fac-description {
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 2rem;
+}
+
+.fac-stripe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 0.2rem;
+    /* background-color: #e3d8d8; */
+}
+
+.fac-box {
+    background-color: #b7ebea;
+    color: #16414a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.fac-box-num {
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.fac-box-text {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* facilities >> */
+
 
 /* << join-us */
 
@@ -234,6 +288,7 @@ section.join-us {
     flex-direction: column;
     align-items: left;
     padding: 3rem 4rem;
+    background-color: #efe9f1;
 }
 
 section.join-us h4 {
