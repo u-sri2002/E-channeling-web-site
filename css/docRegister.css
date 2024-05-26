@@ -26,14 +26,59 @@ body{
 
 }
 
+.r-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.no-padding{
+
+    padding: 0;
+    margin: auto;
+}
+
 /* form section  */
 
 .r-form{
     background-color: rgb(255, 255, 255);
-    border-radius: 30px;
+    border-radius: 2.5rem;
 }
 
-.r-form:hover{
-    background-color: white;
-    border: solid white 2px;
+#r-signup{
+    padding: 2% 3%;
+    font-family: Poppins;
+}
+
+#r-signup h3{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 0;
+    color: #396CCD;
+    font-weight: 500 ;
+}
+
+#r-signup p{
+    text-align: center;
+    font-weight: 500;
+    opacity: 50%;
+}
+
+.form-control{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#r-signup ::placeholder{
+    font-style: italic;
+    opacity: 70%;
+    font-weight: 400;
+}
+
+#r-signup label{
+    font-weight: 400;
+}
+
+#r-signup .box:hover{
+    border: #396CCD solid 2px;
 }

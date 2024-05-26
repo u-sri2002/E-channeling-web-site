@@ -43,24 +43,102 @@
                   Expand your reach and deliver exceptional care with ease.
             </p>
         </div>
-
     </div>
 
     <!-- image and form section  -->
 
-    <div class="container">
+    <div class="container no-padding ">
 
         <div class="row">
-
-            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
-                <img src="./img/technicalDoc-registerpage.png" alt="Technical Doctor" class="img-fluid">
+            <!-- image  -->
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 r-img">
+                <img src="./img/technicalDoc-registerpage.png" alt="Technical Doctor" class="img-fluid w-100">
             </div>
 
+            <!-- form  -->
             <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 r-form">
+
+                <form action="/" method="post" id="r-signup">
+
+                    <h3>Create an Account</h3>
+                    <p>Sign Up now and be a part of the future of electronic doctoring</p>
+
+                    <label for="Name">Name</label> <br>
+                    <input type="text" class="box form-control" placeholder="Full Name"> <br>
+        
+                    <label for="email">Email</label> <br>
+                    <input type="text" class="box form-control" placeholder="test@gmail.com"> <br>
+                    
+                    <label for="mobile">Mobile</label> <br>
+                    <input type="tel" class="box form-control" placeholder="Phone Number"> <br>
+        
+                    <label for="experience">Experience</label> <br>
+                    <input type="text" class="box form-control" placeholder="In years">  <br>
+        
+                    <label for="hospital">Nearest Hospital</label> <br>
+                    <input type="text" placeholder=" Or current place of residence" class="box form-control"> <br>
+                    
+                    <label for="password">Password</label> <br>
+                    <input type="tel" class="box form-control" placeholder="********"> <br>
+                    <!-- Gender checkout -->
+                        <label for="sex">Gender</label> <br>
+        
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="apple">Male</label> | 
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="banana">Female</label><br>
+        
+                    <hr>
+                    
+                    <!-- Selecting specialty of the Doctor -->
+                    <label for="specialty">Choose your specialty:</label> <br>
+        
+                    <select id="specialty" name="specialty" class="scrollable-dropdown container form-control">
+                        <option value="allergy-immunology">Allergy and Immunology</option>
+                        <option value="anesthesiology">Anesthesiology</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="emergency-medicine">Emergency Medicine</option>
+                        <option value="endocrinology">Endocrinology</option>
+                        <option value="family-medicine">Family Medicine</option>
+                        <option value="gastroenterology">Gastroenterology</option>
+                        <option value="geriatrics">Geriatrics</option>
+                        <option value="hematology">Hematology</option>
+                        <option value="infectious-disease">Infectious Disease</option>
+                        <option value="internal-medicine">Internal Medicine</option>
+                        <option value="medical-genetics">Medical Genetics</option>
+                        <option value="nephrology">Nephrology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="ob-gyn">Obstetrics and Gynecology (OB/GYN)</option>
+                        <option value="oncology">Oncology</option>
+                        <option value="ophthalmology">Ophthalmology</option>
+                        <option value="orthopedic-surgery">Orthopedic Surgery</option>
+                        <option value="ent">Otolaryngology (ENT)</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="physical-medicine">Physical Medicine and Rehabilitation</option>
+                        <option value="plastic-surgery">Plastic Surgery</option>
+                        <option value="podiatry">Podiatry</option>
+                        <option value="psychiatry">Psychiatry</option>
+                        <option value="pulmonology">Pulmonology</option>
+                        <option value="radiology">Radiology</option>
+                        <option value="rheumatology">Rheumatology</option>
+                        <option value="surgery">Surgery</option>
+                        <option value="urology">Urology</option>
+                        <option value="vascular-surgery">Vascular Surgery</option>
+                    </select> <br>
+        
+                    <!-- To upload the digree and license Certificates -->
+                    <label for="digree">Upload your license and Certificates</label> <br>
+                    <input type="file" class="form-control"> <br> <br>
                 
+                    <div class="submit">
+                    <button class="btn btn-primary form-control">Submit</button>
+                    </div>
+                </form>
+
             </div>
         </div>
-
     </div>
 
 
