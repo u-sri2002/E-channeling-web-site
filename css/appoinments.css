@@ -1,13 +1,59 @@
 body{
     background-image: linear-gradient(to right, #f3fff5, #e4eeff);
+    font-family: Poppins;
+
 }
 
 .a-heading{
-    font-family: Poppins;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #396CCD;
     font-weight: 600;
     text-align: center;
-    margin: 2%;
-    padding: 3%;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+#a-content{
+    font-weight: 500;
+    text-align: center;
+    padding: 0 2%;
+    font-size: 1.1rem;
+    opacity: 75%;
+}
+
+/* form section  */
+
+.a-form {
+    background-image: linear-gradient(to right, #0072B8, #00A5DF);
+    padding: 2%;
+    border-radius: 2rem;
+}
+
+.a-form label{
+    color: white;
+    margin-top: 6%;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.box{
+    padding: 2%;
+    border-radius: 1.5rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.626);
+}
+
+
+.a-btn{
+    margin-top: 7%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.a-btn button{
+    background-color: #00BF63;
+    color: white;
+    font-weight: 400;
+    padding: 2% 5%;
+    border-radius: 1.5rem;
 }
