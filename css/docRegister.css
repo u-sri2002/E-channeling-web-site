@@ -2,7 +2,7 @@ body{
     background-image: linear-gradient(to right, #f3fff5, #e4eeff);
 }
 
-.r-hero{
+.r-hero-1{
     font-family: Poppins;
     text-align: center;
     margin: 3%;
@@ -19,8 +19,21 @@ body{
     font-weight: 500;
 }
 
-.r-hero p{
+.r-hero-1 p{
     padding: 0 5%;
     font-weight: 500;
     font-size: 1.2rem;
+
+}
+
+/* form section  */
+
+.r-form{
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.r-form:hover{
+    background-color: white;
+    border: solid white 2px;
 }
