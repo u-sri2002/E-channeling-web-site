@@ -2,12 +2,12 @@
 
 .ex-btn {
     width: fit-content;
-    padding: 0.4rem 0.6rem;
-    font-size: 20px;
+    padding: 0.4rem 1rem;
+    font-size: 18px;
     font-weight: 400;
     color: #ffffff;
     cursor: pointer;
-    margin: 0.6rem auto;
+    margin: 0.6rem 0;
     border-radius: 20px;
 }
 
@@ -19,12 +19,20 @@
     background-color: #5e89d5;
 }
 
+.ex-btn.purple {
+    background-color: #7f4491;
+}
+
 .ex-btn.green:hover {
     background-color: #2fae70;
 }
 
 .ex-btn.blue:hover {
     background-color: #567ab9;
+}
+
+.ex-btn.purple:hover {
+    background-color: #693c76;
 }
 
 /* custom buttons >> */
@@ -147,6 +155,26 @@
 }
 
 
+/* << join-us */
 
+section.join-us {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 3rem 4rem;
+}
+
+section.join-us h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+section.join-us p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* join-us >> */
 
 /* Homepage >>*/
