@@ -1,0 +1,13 @@
+body{
+    background-image: linear-gradient(to right, #f3fff5, #e4eeff);
+}
+
+.a-heading{
+    font-family: Poppins;
+    font-size: 2rem;
+    color: #396CCD;
+    font-weight: 600;
+    text-align: center;
+    margin: 2%;
+    padding: 3%;
+}
