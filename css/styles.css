@@ -23,6 +23,10 @@
     background-color: #7f4491;
 }
 
+.ex-btn.white {
+    background-color: #ffffff;
+}
+
 .ex-btn.green:hover {
     background-color: #2fae70;
 }
@@ -33,6 +37,10 @@
 
 .ex-btn.purple:hover {
     background-color: #693c76;
+}
+
+.ex-btn.white:hover {
+    background-color: #c1bfc2;
 }
 
 /* custom buttons >> */
@@ -176,5 +184,42 @@ section.join-us p {
 }
 
 /* join-us >> */
+
+/* << download-app */
+.download-app {
+    /* background-image: linear-gradient(to right, #2b68e2, #0e2a5c); */
+    background-image: linear-gradient(to right, #6790e1, #3266c0);
+    color: #fff;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 1.2rem 0;
+}
+
+.download-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-app h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.download-row span {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    font-weight: 400;
+}
+
+.download-row button {
+    color: rgb(55, 55, 107);
+    margin-left: 1rem;
+}
+
+/* download-app >> */
+
 
 /* Homepage >>*/
