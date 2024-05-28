@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Welcome to eDOC24</title>
 
     <!-- bootstrap CDN link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -33,205 +33,58 @@
     <div class="nav-bar"></div>
     <!-- Navbar -->
 
-    <div class="hero d-flex flex-row px-5 pt-4">
-        <div class="left-side col-7">
-            <h1 class="fs-2">We Care About<br>Your Health</h1>
-            <p class="fs-5 my-4">Welcome to the eChannelling, Sri Lanka's leading private healthcare provider. Our platform ensures seamless access to compassionate and innovative healthcare services, reflecting our unwavering commitment to outstanding patient outcomes. Trust us to connect you with top-tier medical professionals and facilities, dedicated to delivering exceptional care.</p>
+    <header class="hero">
+
+        <div class="left-side">
+            <h1>We Care About<br>Your Health</h1>
+            <p>Welcome to the eChannelling, Sri Lanka's leading private healthcare provider. Our platform ensures seamless access to compassionate and innovative healthcare services, reflecting our unwavering commitment to outstanding patient outcomes. Trust us to connect you with top-tier medical professionals and facilities, dedicated to delivering exceptional care.</p>
             <button class="ex-btn blue" onclick="redirectToPage('contact.html');">Contact Us</button>
         </div>
-        <div class="right-side col-5 d-flex flex-column align-items-center">
-            <span class="hotline fs-3">1212 HOTLINE 24×7</span>
-            <img src="./img/nurse-homepage.png" alt="nurse">
-        </div>
-    </div>
 
-    <div class="download-app">
-        <h5>Download Our App for Quick Access to Services</h5>
-        <div class="download-row">
-            <span>DOC24 Mobile App</span>
-            <button class="ex-btn white">DOWNLOAD</button>
+        <div class="right-side">
+            <span class="hotline">1212 HOTLINE 24×7</span>
+            <img src="./img/nurse-homepage.png" alt=" A nurse taking notes">
         </div>
 
+    </header>
+
+    <section class="channel-doctor-banner">
+
+        <div class="mask">
+            <h2>Channel Your Doctor Now!</h2>
+            <button class="ex-btn green" onclick="redirectToPage('appointments.html');">Make an Appointment</button>
+        </div>
+        
+    </section>
+
+    <div class="banner-ads">
+
+        <div class="ad-download-app">
+            <h5>Download Our App for Quick Access to Services</h5>
+            <div class="ad-download-app-row">
+                <span>eDOC24 Mobile App</span>
+                <button class="ex-btn white">DOWNLOAD</button>
+            </div>
+        </div>
+
     </div>
 
-    <div class="channel-doctor-stripe d-flex flex-column align-items-center py-4">
-        <h2 class="fs-2">Channel Your Doctor Now!</h2>
-        <button class="ex-btn green" onclick="redirectToPage('appointments.html');">Make an Appointment</button>
-    </div>
-
-    <section class="sector specialists">
+    <section class="sector spe">
         
         <h3 class="sector-title">Specialists</h3>
-
-        <div class="ex-card-container">
-
-            <div class="ex-card-holder">
-                <div class="ex-card">
-                    <div class="ex-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ex-card-title">Cardiologist</h6>
-                    <p class="ex-card-description">Expert in heart health, diagnosing and treating conditions like heart disease and hypertension to ensure optimal cardiovascular function.</p>
-                </div>
-            </div>
-
-            <div class="ex-card-holder">
-                <div class="ex-card">
-                    <div class="ex-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ex-card-title">Dermatologist</h6>
-                    <p class="ex-card-description">Specialist in skin health, treating acne, eczema, and skin cancers, and providing advanced skincare solutions for all skin types.</p>
-                </div>
-            </div>
-
-            <div class="ex-card-holder">
-                <div class="ex-card">
-                    <div class="ex-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ex-card-title">Endocrinologist</h6>
-                    <p class="ex-card-description">Focuses on hormonal health, managing diabetes, thyroid disorders, and metabolic imbalances to maintain the body's endocrine system.</p>
-                </div>
-            </div>
-
-            <div class="ex-card-holder">
-                <div class="ex-card">
-                    <div class="ex-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ex-card-title">Gastroenterologist</h6>
-                    <p class="ex-card-description">Provides care for digestive health, addressing issues like IBS, ulcers, and liver diseases, ensuring a healthy digestive tract.</p>
-                </div>
-            </div>
-
-            <div class="ex-card-holder">
-                <div class="ex-card">
-                    <div class="ex-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ex-card-title">Neurologist</h6>
-                    <p class="ex-card-description">Treats brain and nervous system disorders, such as epilepsy, migraines, and Parkinson’s disease, enhancing neurological health.</p>
-                </div>
-            </div>
-
-            <div class="ex-card-holder">
-                <div class="ex-card">
-                    <div class="ex-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ex-card-title">Oncologist</h6>
-                    <p class="ex-card-description">Specializes in cancer care, offering chemotherapy, radiation, and surgical treatments while supporting patients through their cancer journey.</p>
-                </div>
-            </div>
-
-            <div class="ex-card-holder">
-                <div class="ex-card">
-                    <div class="ex-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ex-card-title">Psychiatrist</h6>
-                    <p class="ex-card-description">Expert in mental health, addressing disorders like depression through therapy and medication, promoting psychological well-being.</p>
-                </div>
-            </div>
-
-            <div class="ex-card-holder">
-                <div class="ex-card final">
-                    <span class="ex-see-more-text">See More</span>
-                    <div class="ex-see-more-icon">
-                        <img src="./img/see-more-arrow.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+        <div class="spe-card-container"></div>
 
     </section>
 
-
     <section class="sector ser">
-        <h3 class="ser-title">Services</h3>
 
-        <div class="ser-card-container">
-
-            <div class="ser-card-holder">
-                <div class="ser-card">
-                    <div class="ser-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ser-card-title">Doctor Appointments</h6>
-                </div>
-            </div>
-
-            <div class="ser-card-holder">
-                <div class="ser-card">
-                    <div class="ser-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ser-card-title">Online Consultation</h6>
-                </div>
-            </div>
-
-            <div class="ser-card-holder">
-                <div class="ser-card">
-                    <div class="ser-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ser-card-title">Medical Records Management </h6>
-                </div>
-            </div>
-
-            <div class="ser-card-holder">
-                <div class="ser-card">
-                    <div class="ser-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ser-card-title">Lab Test Bookings</h6>
-                </div>
-            </div>
-
-            <div class="ser-card-holder">
-                <div class="ser-card">
-                    <div class="ser-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ser-card-title">Pharmacy Services</h6>
-                </div>
-            </div>
-
-            <div class="ser-card-holder">
-                <div class="ser-card">
-                    <div class="ser-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ser-card-title">Emergency Services</h6>
-                </div>
-            </div>
-
-            <div class="ser-card-holder">
-                <div class="ser-card">
-                    <div class="ser-card-image">
-                        <img src="./img/cardiologist-vector.jpeg" alt="Cardiologist">
-                    </div>
-                    <h6 class="ser-card-title">Health Packages</h6>
-                </div>
-            </div>
-
-            <div class="ser-card-holder">
-                <div class="ser-card final">
-                    <span class="ser-see-more-text">See More</span>
-                    <div class="ser-see-more-icon">
-                        <img src="./img/see-more-arrow.svg" alt="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        <h3 class="sector-title">Services</h3>
+        <div class="ser-card-container"></div>
 
     </section>
 
     <section class="sector fac">
-        <h5 class="fac-title">Facilities</h5>
+        <h5 class="sector-title">Facilities</h5>
 
         <p class="fac-description">Our hospital is equipped with a highly skilled team of doctors, a network of well-stocked pharmacies, and a dedicated nursing staff, all working in harmony to provide comprehensive healthcare services. The facility also includes several specialized departments, each focused on delivering advanced medical treatments. Together, these resources ensure that patients receive high-quality care tailored to their specific needs, whether it's a routine check-up or specialized treatment.</p>
 
