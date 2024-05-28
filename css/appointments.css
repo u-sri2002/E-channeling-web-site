@@ -102,3 +102,12 @@ body{
     background-color: #08cb6d;
     font-size: 1.3rem;
 }
+
+/* responsive pading for mobiles  */
+
+@media (max-width: 580px) {
+   
+    .pd-mobile{
+        padding: 0% 10%;
+    }
+}
