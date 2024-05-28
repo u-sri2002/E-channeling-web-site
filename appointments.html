@@ -27,7 +27,7 @@
         <!-- footer css link -->
 
         <!-- appoinment css link -->
-        <link rel="stylesheet" href="./css/appoinments.css">
+        <link rel="stylesheet" href="./css/appointments.css">
 </head>
 <body>
 
@@ -52,7 +52,7 @@
         <div class="container a-form">
             <div class="row">
 
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
 
                         <!-- doctor name  -->
                         <label for="name">Doctor's Name</label> <br>
@@ -117,9 +117,9 @@
                         <!-- Hospital name  -->
                         <label for="name">Hospital Name</label> <br>
                         <input type="text" class="box form-control">                
-                    </div>
+                </div>
     
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <!-- gender -->
                         <label for="gender">gender</label>
                         <select name="gender" id="gender" class="form-control box">
@@ -153,19 +153,51 @@
                             <option value="Any">LKR.5000 - LKR.10000</option>
                         </select>
 
-                    </div>
-
-                    <div class="a-btn col-lg-12 col-sm-12">
-                    <button class=" ">Confirm</button>
-
-                    </div>
                 </div>
-        </div>
 
+                <div class="a-btn col-lg-12 col-sm-12">
+                <button class=" ">Confirm</button>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- card section  -->
+    <hr>
+
+    <div class="containter">
+        <h2 class="a-heading">Check Your Appintments</h2>
+
+        <p id="a-content"> Check your previous appointments here... <br>
+            Easily find details, reschedule, or cancel appointments,
+             and leave feedback for your service providers. If you need assistance,
+              our support team is here to help.
+       </p>
+
+    </div>
+
+    <!-- Sub form - My appointments-->
+
+    <form action="/" method="post">
+        <div class="container a-form" id="my-appointments">
+            <div class="row">
+
+                <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 a-number">
+                    <label for="payment" id="payment">Mobile Number </label>
+                    <input type="tel" class="form-control box" placeholder="+94-7########">
+                </div>
+
+                <div class="a-btn-2 col-xl-5 col-lg-5 col-md-6 col-sm-12" >
+                    <button type="submit ">Check Appointment</button>
+                </div>
+
+            </div>
+        </div>
     </form>
 
 
-    <!-- <footer></footer> -->
+    <footer></footer>
 
     <!-- footer script link -->
     <script src="./footer/footer.js"></script>
