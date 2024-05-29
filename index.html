@@ -5,70 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to eDOC24</title>
 
-    <!-- bootstrap CDN link -->
+    <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- bootstrap CDN link -->
 
-    <!-- CSS Main-->
+    <!-- Main CSS-->
     <link rel="stylesheet" href="./css/styles.css">
-    <!-- CSS Main-->
     
-    <!-- CSS Reset -->
+    <!-- Reset CSS-->
     <link rel="stylesheet" href="./css/reset.css">
-    <!-- CSS Reset -->
     
-    <!-- Navbar --> 
-    <script defer src="./navbar/navbar.js"></script>
+    <!-- Navbar CSS--> 
     <link rel="stylesheet" href="./navbar/navbar.css">
-    <!-- Navbar -->
 
-    <!-- footer css link -->
+    <!-- Footer CSS -->
     <link rel="stylesheet" href="./footer/footer.css">
-    <!-- footer css link -->
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
 
 </head>
 <body>
 
     <!-- Navbar -->
     <div class="nav-bar"></div>
-    <!-- Navbar -->
 
+    <!-- Header -->
     <header class="hero">
 
-        <div class="left-side">
-            <h1>We Care About<br>Your Health</h1>
+        <div class="hero-left">
+            <h1>We Care About Your Health</h1>
             <p>Welcome to the eChannelling, Sri Lanka's leading private healthcare provider. Our platform ensures seamless access to compassionate and innovative healthcare services, reflecting our unwavering commitment to outstanding patient outcomes. Trust us to connect you with top-tier medical professionals and facilities, dedicated to delivering exceptional care.</p>
             <button class="ex-btn blue" onclick="redirectToPage('contact.html');">Contact Us</button>
         </div>
 
-        <div class="right-side">
-            <span class="hotline">1212 HOTLINE 24×7</span>
+        <div class="hero-right">
+            <h5 class="hotline">1212 HOTLINE 24×7</h5>
             <img src="./img/nurse-homepage.png" alt=" A nurse taking notes">
         </div>
 
     </header>
 
+    <!-- Channel-Your-Doctor-Now Section -->
     <section class="channel-doctor-banner">
 
-        <div class="mask">
+        <div class="img-container">
+            <div class="mask"></div>
+        </div>
+
+        <div class="content-container">
             <h2>Channel Your Doctor Now!</h2>
             <button class="ex-btn green" onclick="redirectToPage('appointments.html');">Make an Appointment</button>
         </div>
         
     </section>
 
-    <div class="banner-ads">
+    <!-- Banner Ads -->
+    <div class="banner-ad-container">
+        <span class="banner-arrow prev">&lt;</span>
+        <span class="banner-arrow next">&gt;</span>
 
-        <div class="ad-download-app">
-            <h5>Download Our App for Quick Access to Services</h5>
-            <div class="ad-download-app-row">
-                <span>eDOC24 Mobile App</span>
-                <button class="ex-btn white">DOWNLOAD</button>
+        <div class="banner-ads ad-fade">
+
+            <div class="ad-download-app">
+                <h6>Download Our App for Quick Access to Services</h6>
+                <div class="ad-download-app-row">
+                    <span>eDOC24 Mobile App</span>
+                    <button class="ex-btn white">Download</button>
+                </div>
             </div>
+
+            <div class="ad-refund">
+                <h6>Need a Refund? No worries! We're here to help</h6>
+                <div class="ad-refund-row">
+                    <span>Initiate your refund</span>
+                    <button class="ex-btn white">Refund</button>
+                </div>
+            </div>
+    
         </div>
 
     </div>
 
+    <!-- Specialists Section -->
     <section class="sector spe">
         
         <h3 class="sector-title">Specialists</h3>
@@ -76,6 +94,7 @@
 
     </section>
 
+    <!-- Services Section -->
     <section class="sector ser">
 
         <h3 class="sector-title">Services</h3>
@@ -83,26 +102,27 @@
 
     </section>
 
+    <!-- Facilities Section -->
     <section class="sector fac">
-        <h5 class="sector-title">Facilities</h5>
+        <h3 class="sector-title">Facilities</h3>
 
         <p class="fac-description">Our hospital is equipped with a highly skilled team of doctors, a network of well-stocked pharmacies, and a dedicated nursing staff, all working in harmony to provide comprehensive healthcare services. The facility also includes several specialized departments, each focused on delivering advanced medical treatments. Together, these resources ensure that patients receive high-quality care tailored to their specific needs, whether it's a routine check-up or specialized treatment.</p>
 
         <div class="fac-stripe">
             <div class="fac-box">
-                <span class="fac-box-num">+20</span>
+                <span class="fac-box-num">+<span class="counter" data-count="20">0</span></span>
                 <span class="fac-box-text">Specialists</span>
             </div>
             <div class="fac-box">
-                <span class="fac-box-num">+80</span>
+                <span class="fac-box-num">+<span class="counter" data-count="80">0</span></span>
                 <span class="fac-box-text">Nursing Staff</span>
             </div>
             <div class="fac-box">
-                <span class="fac-box-num">+3</span>
+                <span class="fac-box-num">+<span class="counter" data-count="3">0</span></span>
                 <span class="fac-box-text">Pharmacies</span>
             </div>
             <div class="fac-box">
-                <span class="fac-box-num">+15</span>
+                <span class="fac-box-num">+<span class="counter" data-count="15">0</span></span>
                 <span class="fac-box-text">Labs</span>
             </div>
         </div>
@@ -112,46 +132,115 @@
 
         <div class="fac-stripe">
             <div class="fac-box">
-                <span class="fac-box-num">+80</span>
+                <span class="fac-box-num">+<span class="counter" data-count="80">0</span></span>
                 <span class="fac-box-text">Daily Appointments</span>
             </div>
             <div class="fac-box">
-                <span class="fac-box-num">+60</span>
+                <span class="fac-box-num">+<span class="counter" data-count="60">0</span></span>
                 <span class="fac-box-text">Daily Lab Tests</span>
             </div>
             <div class="fac-box">
-                <span class="fac-box-num">+10</span>
+                <span class="fac-box-num">+<span class="counter" data-count="10">0</span></span>
                 <span class="fac-box-text">Daily Surgeries</span>
             </div>
             <div class="fac-box">
-                <span class="fac-box-num">+90</span>
+                <span class="fac-box-num">+<span class="counter" data-count="90">0</span></span>
                 <span class="fac-box-text">Daily Prescriptions</span>
             </div>
         </div>
 
     </section>
 
+    <!-- Join as a Specialist Section -->
     <section class="join-us">
-        <h4>Are You a Specialist? Join Our eChannelling Network!</h4>
+        <h6>Are You a Specialist? Join Our eChannelling Network!</h6>
 
         <p>Are you a healthcare professional seeking to expand your reach and connect with more patients? Join our platform and become part of a community dedicated to providing accessible and convenient healthcare services.</p>
 
         <button class="ex-btn purple" onclick="redirectToPage('registerAsDoctor.html');">Register As a Specialist</button>
     </section>
 
+    <!-- Footer -->
     <footer></footer>
 
-    <!-- bootstrap CDN link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- bootstrap CDN link -->
-
-    <!-- JavaScript -->
+    <!-- Main JS -->
     <script src="./js/scripts.js"></script>
-    <!-- JavaScript -->
 
-    <!-- footer script link -->
+    <!-- Navbar JS -->
+    <script defer src="./navbar/navbar.js"></script>
+
+    <!-- Footer JS -->
     <script src="./footer/footer.js"></script>
-    <!-- footer script link -->
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
+    <!-- Slick JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Count on scroll -->
+    <script>
+        $(document).ready(function() {
+            function isElementInViewport(el) {
+                var rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+
+            function animateCounter($element) {
+                var countTo = $element.data('count');
+                $({ countNum: $element.text() }).animate({
+                    countNum: countTo
+                },
+                {
+                    duration: 1000,
+                    easing: 'swing',
+                    step: function() {
+                        $element.text(Math.floor(this.countNum));
+                    },
+                    complete: function() {
+                        $element.text(this.countNum);
+                    }
+                });
+            }
+
+            function checkCounters() {
+                $('.counter').each(function() {
+                    var $element = $(this);
+                    if (isElementInViewport(this) && !$element.hasClass('counted')) {
+                        $element.addClass('counted');
+                        animateCounter($element);
+                    }
+                });
+            }
+
+            $(window).on('scroll', checkCounters);
+            $(window).on('load', checkCounters);
+
+        });
+    </script>
+
+    <!-- Slick Slider -->
+    <script type="text/javascript">
+        $(document).ready(function(){       
+            $('.ad-fade').slick({
+                dots: true,
+                infinite: true,
+                speed: 700,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+            });
+        });
+    </script>
+
 </body>
 </html>
