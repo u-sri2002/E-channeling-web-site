@@ -4,23 +4,22 @@
     grid-template-columns: 65% 35%;
     padding: 2.4rem 2.4rem 0 2.4rem;
     background-image: linear-gradient(to right, #f3fff5, #e4eeff);
-
 }
 
-.hero .left-side {
+.hero .hero-left {
     display: flex;
     flex-direction: column;
     align-items: left;
 }
 
-.hero .left-side h1 {
+.hero .hero-left h1 {
     color: #5e89d5;
     font-size: 2.3rem;
     font-weight: 600;
     line-height: 1.4;
 }
 
-.hero .left-side p {
+.hero .hero-left p {
     color: rgba(0, 0, 0, 0.758);
     font-size: 1.2rem;
     font-weight: 300;
@@ -29,61 +28,100 @@
     margin: 2.2rem 0;
 }
 
-.hero .right-side {
+.hero .hero-right {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-.hero .right-side .hotline {
+.hero .hero-right .hotline {
     color: #5e89d5;
     font-size: 2rem;
     font-weight: 400;
 }
 
-.hero .right-side img {
-    height: 360px;
+.hero .hero-right img {
+    height: 24rem;
 }
 /* Header >> */
 
 
 /* << Channel-Your-Doctor Banner */
 .channel-doctor-banner {
-    background-color: #c6f1dc;
+    overflow: hidden;
+    height: 80vh;
+    position: relative;
+}
+
+.img-container {
     background-image: url('../img/bg-1.jpg');
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    transition: 0.7s;
 }
 
 .mask {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #191a1a98;
+    background-color: #0c191998;
     width: 100%;
     height: 100%;
 }
 
-.channel-doctor-banner h2 {
+.content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content-container h2 {
+    font-size: 2rem;
     font-weight: 500;
     color: #33cc82;
     margin-bottom: 1rem;
+}
+
+.channel-doctor-banner:hover .img-container {
+    transform: scale(1.2)
 }
 /* Channel-Your-Doctor Banner >> */
 
 
 /* << Banner Ads */
+.banner-ad-container {
+    position: relative;
+}
+
+.banner-arrow {
+    position: absolute;
+    color: white;
+    z-index: 1000;
+    top: 40%;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.banner-arrow.prev {
+    left: 2.4rem;
+}
+
+.banner-arrow.next {
+    right: 2.4rem;
+}
+
 .banner-ads {
+    width: 100%;
     background-image: linear-gradient(to right, #f3fff5, #e4eeff);
-    padding: 2.5rem 0;
+    padding: 5rem 0;
+    z-index: 900;
 }
 /* Banner Ads >> */
 
@@ -95,7 +133,9 @@
     display: flex;
     flex-direction:column;
     align-items: center;
+    justify-content: center;
     padding: 1.2rem 0;
+    text-align: center;
 }
 
 .ad-download-app-row {
@@ -105,7 +145,7 @@
     justify-content: center;
 }
 
-.ad-download-app h5 {
+.ad-download-app h6 {
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -125,6 +165,47 @@
     color: #ffffff;
 }
 /* Ad download-app >> */
+
+
+/* << Ad Refund */
+.ad-refund {
+    background-image: linear-gradient(to right, rgb(123, 53, 172), #8c14a1);
+    color: #fff;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 0;
+    text-align: center;
+}
+
+.ad-refund-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ad-refund h6 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.ad-refund-row span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-right: 1rem;
+}
+
+.ad-refund-row button {
+    color: #620d7c;
+    margin-left: 1rem;
+}
+
+.ad-refund-row button:hover {
+    color: #ffffff;
+}
+/* Ad Refund >> */
 
 
 /* << Sector */
@@ -166,7 +247,7 @@
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     color: #354c64;
-    height: 350px;
+    max-height: 28rem;
 }
 
 .spe-card-img {
@@ -182,7 +263,7 @@
 .spe-card-desc {
     text-align: center;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .spe-card.final-card {
@@ -272,7 +353,7 @@
 .fac-description {
     text-align: left;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .fac-stripe {
@@ -288,19 +369,25 @@
     color: #16414a;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 1rem 0;
 }
 
 .fac-box-num {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.counter {
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
 .fac-box-text {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
+    text-align: center;
 }
 /* facilities >> */
 
@@ -314,7 +401,7 @@
     background-color: #efe9f1;
 }
 
-.join-us h4 {
+.join-us h6 {
     font-size: 1.3rem;
     font-weight: 400;
     color: #202020;
@@ -326,29 +413,6 @@
     color: #202020;
 }
 /* Join-us >> */
-
-
-/* << Media Queries */
-@media only screen and (min-width: 576px) {
-
-}
-
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 992px) {
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-}
-
-@media only screen and (min-width: 1400px) {
-
-}
-/* Media Queries >> */
 
 
 /* << custom buttons */
@@ -394,3 +458,130 @@
     background-color: #292828;
 }
 /* custom buttons >> */
+
+
+/* << Media Queries */
+@media only screen and (max-width: 576px) {
+    .spe-card {
+        margin: 1rem;
+    }
+    .spe-card-container {
+        display: block;
+    }
+    .ser-card-container {
+        display: block;
+    }
+    .ser-card {
+        margin: 1rem;
+    }
+    .fac-stripe {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.6rem;
+    }
+    .hero .hero-left {
+        margin-bottom: 0.5rem;
+    }
+    .hero .hero-left p {
+        margin: 0.5rem 0;
+    }
+    .hero .hero-left button {
+        margin: 0.5rem 0;
+    }
+    .hero .hero-right img {
+        height: 20rem;
+    }
+    .banner-arrow {
+        display: none !important;
+    }
+    .ad-download-app h6 {
+        font-size: 1.1rem;
+    }
+    .ad-download-app-row span {
+        font-size: 1rem;
+        margin-right: 0.2rem;
+    }
+    .ad-download-app-row button {
+        margin-left: 0.2rem;
+    }
+    .ad-refund h6 {
+        font-size: 1.1rem;
+    }
+    .ad-refund-row span {
+        font-size: 1rem;
+        margin-right: 0.2rem;
+    }
+    .ad-refund-row button {
+        margin-left: 0.2rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hero {
+        display: block;
+    }
+    .hero .hero-left {
+        margin-bottom: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-arrow {
+        font-size: 1.8rem;
+    }
+    
+    .banner-arrow.prev {
+        left: 1rem;
+    }
+    
+    .banner-arrow.next {
+        right: 1rem;
+    }
+    .ad-download-app h6 {
+        font-size: 1.3rem;
+    }
+    .ad-download-app-row span {
+        font-size: 1.1rem;
+        margin-right: 0.6rem;
+    }
+    .ad-download-app-row button {
+        margin-left: 0.6rem;
+    }
+    .ad-refund h6 {
+        font-size: 1.3rem;
+    }
+    .ad-refund-row span {
+        font-size: 1.1rem;
+        margin-right: 0.6rem;
+    }
+    .ad-refund-row button {
+        margin-left: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .spe-card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .ser-card-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+    .hero {
+        grid-template-columns: 50% 50%;
+    }
+    .hero .hero-left p {
+        margin: 1rem 0;
+    }
+    .hero .hero-left button {
+        margin: 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+}
+/* Media Queries >> */
