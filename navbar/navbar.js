@@ -50,6 +50,20 @@ function initSizes() {
     innerNav.style.height = (window.innerHeight - navHeight) + "px";
 
     innerNav.style.right =  (- innerNavWidth) + "px";
+
+    if (window.scrollY > navHeight) {
+        // innerNav.style.height = "100vh";
+        // innerNav.style.top = "0px";
+        // navBar.classList.add('make-fixed');
+        // navBar.style.top = 0;
+    }else {
+        // innerNav.style.top = navHeight + "px";
+        // innerNav.style.height = (window.innerHeight - navHeight) + "px";
+        // navBar.classList.remove('make-fixed');
+    }
+
+    let secondChildElement = document.body.children[1];
+    secondChildElement.style.marginTop = secondChildElement.style.marginTop + navHeight + "px";
 }
 
 
@@ -81,8 +95,9 @@ window.addEventListener('resize', function() {
     resetNavigation();
 });
 
-document.addEventListener('scroll', function () {
+window.addEventListener('scroll', function () {
     resetNavigation();
+
 })
 
 function resetNavigation() {
