@@ -16,12 +16,12 @@ body{
 
 .r-title span{
     color: #00BF63;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .r-hero-1 p{
     padding: 0 5%;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1.2rem;
 
 }
@@ -91,7 +91,7 @@ body{
 
 small{
     margin: 0;
-    padding: 0% 2%;
+    padding: 0% 1% 0% 0%;
 }
 
 .form-fields.error small{
@@ -105,12 +105,27 @@ small{
     
 }
 
-/* .form-fields.success small{
-    color: green;
-    opacity: 70%;
-    font-family:  Calibri;
-} */
-
 .form-fields.success input{
     border: 2px solid #2ecc71;  
+}
+
+i{
+    margin: 0;
+    padding: 0;
+}
+
+i svg{
+    fill: #FA7070;
+    margin: 0;
+    padding: 0;
+    width: 3%;
+
+}
+
+.hide-text small{
+    visibility: hidden;
+}
+
+.hide-text i{
+    visibility: hidden;
 }
