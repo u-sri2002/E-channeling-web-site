@@ -23,7 +23,6 @@ body{
     padding: 0 5%;
     font-weight: 300;
     font-size: 1.2rem;
-
 }
 
 .r-img img{
@@ -48,6 +47,7 @@ body{
 #r-signup{
     padding: 2% 3%;
     font-family: Poppins;
+    margin-bottom: 5%;
 }
 
 #r-signup h3{
@@ -101,8 +101,7 @@ small{
 }
 
 .form-fields.error input{
-    border: 2px solid  #FFA27F;
-    
+    border: 2px solid  #FFA27F;  
 }
 
 .form-fields.success input{
@@ -119,7 +118,6 @@ i svg{
     margin: 0;
     padding: 0;
     width: 3%;
-
 }
 
 .hide-text small{
@@ -129,3 +127,47 @@ i svg{
 .hide-text i{
     visibility: hidden;
 }
+
+/* ------- carousel -------- */
+
+hr{
+    margin: 3% 5%;
+    border: black solid 2px;
+}
+
+#carousel-title{
+    margin: 2%;
+    font-size: 2.3rem;
+}
+
+.carousel-container {
+    padding: 3%;
+    margin: 2%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #007DB2, #00BF63);
+  }
+  
+.carousel-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Poppins;
+    color: white;
+}
+
+.carousel-slide h1{
+    margin: 2%;
+    font-weight: 600;
+}
+
+.carousel-slide p{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+
+
+  

@@ -5,7 +5,7 @@ const mobile = document.getElementById("mobile");
 const experience = document.getElementById("experience");
 const password = document.getElementById("password");
 const residence = document.getElementById("residence");
-
+const uploadFile = document.getElementById("uploadFile")
 
 
 function sendErrorFor(input, message){
@@ -69,7 +69,6 @@ function formInputsValidation(){
     let mobileValue = mobile.value.trim();
     let experienceValue = experience.value.trim();
     let residenceValue = residence.value.trim();
-    let passwordValue = password.value.trim();
 
 
     // userName validation 
@@ -137,6 +136,7 @@ function formInputsValidation(){
     // call function for password validation 
     validatePassword();
 
+    uploadFile.setAttribute('required', '');
 }
 
 
@@ -148,3 +148,33 @@ signupForm.addEventListener('submit', function(submission) {
     formInputsValidation();
    
 });
+
+
+// ---- carousel ------
+
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".carousel-slide");
+    let currentSlide = 0;
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        if (i === index) {
+          slide.style.display = "block";
+        } else {
+          slide.style.display = "none";
+        }
+      });
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+  
+    // Show the first slide
+    showSlide(currentSlide);
+  
+    // Automatically transition each 5s
+    setInterval(nextSlide, 5000);
+  });
+  
