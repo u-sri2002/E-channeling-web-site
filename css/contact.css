@@ -11,27 +11,33 @@ html {
 body{
     background-image: linear-gradient(to right,#0072b8,#00a5df);
     font-family: Poppins;
-
 }
 
-* {
+* { /* CSS Reset >> */
     border: none;
     outline: none;
     box-sizing: border-box;
     text-decoration: none;
     font-weight: 300;
 }
-/* CSS Reset >> */
+
+h1{
+    margin: 2% 0 0 0;
+    padding: 2%;
+    color: white;
+}
 
 .p01{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #e7dede;
+    padding:0% 3%;
 }
 
 .p02{
     font-size: 1.1rem;
-    color: #000000;
+    color: #01204E;
     font-weight: 400;
+    font-style: italic;
 }
 
 .box{
@@ -49,7 +55,11 @@ body{
     align-items: center;
     border-radius: 50%;
     font-size: 22px;
-    /* color: #e91e63; */
+}
+
+svg{
+    height: 100%;
+    fill: black;
 }
 
 .box .text{
@@ -64,7 +74,9 @@ body{
 .box .text h3{
     font-weight: 400;
     font-size: 25px;
-    color: #ececec;
+    color: white;
+    text-decoration: underline;
+
 
 }
 
