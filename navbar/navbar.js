@@ -1,16 +1,16 @@
 document.querySelector('.nav-bar').innerHTML = `
 <div class="nav-logo">
-            <a href="/"><img src="./img/nav-logo.png" alt="eDoc24 Logo"></a>
+            <a href="https://u-sri2002.github.io/E-channeling-web-site/index.html"><img src="./img/nav-logo.png" alt="eDoc24 Logo"></a>
         </div>
 
         <nav class="top-nav">
 
             <div class="nav-list nav-out">
-            <a  class="nav-item green" href="appointments.html"><span>Appointments</span></a>
-            <a  class="nav-item green" href="refund.html"><span>Refund</span></a>
-            <a  class="nav-item blue" href="services.html"><span>Services</span></a>
-            <a  class="nav-item blue" href="contact.html"><span>Contact</span></a>
-            <a  class="nav-item blue" href="account.html"><span>Account</span></a>
+                <a  class="nav-item green" href="/"><span>Home</span></a>
+                <a  class="nav-item green" href="appointments.html"><span>Appointments</span></a>
+                <a  class="nav-item green" href="specialist.html"><span>Specialists</span></a>
+                <a  class="nav-item blue" href="contact.html"><span>Contact</span></a>
+                <a  class="nav-item blue" href="signup.html"><span>Account</span></a>
             </div>
 
             <button class="menu" onclick="doNavClick()" aria-label="Main Menu">
@@ -22,12 +22,14 @@ document.querySelector('.nav-bar').innerHTML = `
             </button>
 
             <div class="nav-list nav-in">
+                <a  class="nav-item green" href="/"><span>Home</span></a>
                 <a  class="nav-item green" href="appointments.html"><span>Appointments</span></a>
-                <a  class="nav-item green" href="refund.html"><span>Refund</span></a>
-                <a  class="nav-item blue" href="services.html"><span>Services</span></a>
+                <a  class="nav-item green" href="specialist.html"><span>Specialists</span></a>
                 <a  class="nav-item blue" href="contact.html"><span>Contact</span></a>
-                <a  class="nav-item blue" href="account.html"><span>Account</span></a>
-                </div>
+                <a  class="nav-item blue" href="download-app.html"><span>Download App</span></a>
+                <a  class="nav-item blue" href="registerAsDoctor.html"><span>Register as a Specialist</span></a>
+                <a  class="nav-item blue" href="signup.html"><span>Account</span></a>
+            </div>
 
         </nav>
 
