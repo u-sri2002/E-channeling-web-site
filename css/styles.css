@@ -1,4 +1,9 @@
 /* << Header */
+
+body{
+    font-family: Poppins;
+}
+
 .hero {
     display: grid;
     grid-template-columns: 65% 35%;
