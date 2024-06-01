@@ -3,14 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/css/style_sign_login.css">
 
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-     <!-- Bootstrap CSS Link -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
      <!-- CSS Main-->
      <link rel="stylesheet" href="./css/styles.css">
@@ -20,6 +17,8 @@
      <script defer src="./navbar/navbar.js"></script>
      <link rel="stylesheet" href="./navbar/navbar.css">
      <!-- Navbar -->
+ 
+      
 
 </head>
 
@@ -29,6 +28,8 @@
     <!-- Navbar -->
     <div class="nav-bar"></div>
     <!-- Navbar -->
+
+ 
 
     <div class="row" style="margin-top:150px;">
         <!-- Image -->
@@ -40,38 +41,32 @@
         <!-- Form -->
         <div class="col-md-6" style="height: 62vh;width: 350px; align-items: center;justify-items: center;background-color:#ffffff;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);border-radius: 10px;">
             
-                <div class="form signup">
+                <div class="form login">
                     <div class="form-content" >      <!--style="text-align: left;"-->
-                        <header style="font-size: 28px;font-weight: 600;color: #232836;text-align: center;margin-top:10px;">Signup</header>
+                        <header style="font-size: 28px;font-weight: 600;color: #232836;text-align: center;margin-top:10px;">Login</header>
 
-                        <form id="signUpForm" action="#" style="background-color: aliceblue;width: 100%;padding: 2%;border-radius: 6px;margin-top: 30px;margin-left: auto;margin-right: auto;">
+                        <form id="loginForm" action="#" style="background-color: aliceblue;width: 100%;padding: 5%;border-radius: 6px;margin-top: 30px;margin-left: auto;margin-right: auto;">
                             
                             <div class="field" style="height: 40px;width: 100%;margin-top: 20px;">
-                                <input type="name" id="username" placeholder="Username" class="input" style="height: 100%;width: 100%;padding: 0 15px;border: 1px solid #cacacc;">
-                            </div>
-                            
-                            <div class="field" style="height: 40px;width: 100%;margin-top: 20px;">
-                                <input type="email" id="email" placeholder="Email" class="input" style="height: 100%;width: 100%;padding: 0 15px;border: 1px solid #cacacc;">
+                                <input id="email" type="email" placeholder="Email" class="input" style="height: 100%;width: 100%;padding: 0 15px;border: 1px solid #cacacc;">
                             </div>
 
                             <div class="field" style="height: 40px;width: 100%;margin-top: 20px;">
-                                <input type="password" id="password" placeholder="Password" class="password" style="height: 100%;width: 100%;padding: 0 15px;border: 1px solid #cacacc;">
+                                <input id="password" type="password" placeholder="Password" class="password" style="height: 100%;width: 100%;padding: 0 15px;border: 1px solid #cacacc;">
                                 
                             </div>
 
-                            <div class="field" style="height: 40px;width: 100%;margin-top: 20px;">
-                                <input type="password" id="confirm-password" placeholder="Confirm password" class="password" style="height: 100%;width: 100%;padding: 0 15px;border: 1px solid #cacacc;">
-                                
+                            <div class="forgot-link" style="text-align: center;margin-top: 10px;">
+                                <a href="#" class="forgot-pass" style="font-size: 14px;font-weight: 400;color: #0171d3;text-decoration: none;">Forgot Password?</a>
                             </div>
 
-                            
                             <div class="input-field" style="height: 30px;width: 100%;margin-top: 20px;display: flex;
                             justify-content: center;">
-                                <button style="height: 120%;width: 100%;border: none;font-size: 16px;font-weight: 400;border-radius: 6px;">Signup</button>
+                                <button style="height: 120%;width: 100%;border: none;font-size: 16px;font-weight: 400;border-radius: 6px;">Login</button>
                             </div>
 
                             <div class="form-link">
-                                <span>Already have an account?&nbsp;<a href="login.html" class="login">Login</a></span>
+                                <span>New on our platform?&nbsp;<a href="signup.html" class="sign-up">Signup</a></span>
                             </div>
                         </form>
 
@@ -82,6 +77,7 @@
         </div>
     </div>
 
+ 
     
     
     
@@ -90,11 +86,14 @@
     
     
     
-    
-    <script src="/js/signup.js"></script>
+    <script src="/js/login.js"></script>
 
     <!-- Bootstrap JS Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
+    
+
+    
+
 </body>
 </html>
