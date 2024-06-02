@@ -70,7 +70,7 @@ h1{
     /* font-size: 22px; */
 }
 
-svg{
+.icon svg{
     height: 100%;
     fill: black;
 }
@@ -109,9 +109,7 @@ svg{
 }
 
 .inputbox{
-    margin: 2% 0 0 0;
     padding: 1% 0 0 0;
-    
 }
 
 .inputbox span{
@@ -131,7 +129,6 @@ svg{
 }
 
 .inputbox button{
-    /* width: 100px; */
     background-color: #1da8ff;
     color: white;
     border: 2px ridge #d2d2d2; /* Added border property */
@@ -139,7 +136,6 @@ svg{
     padding: auto;
     margin: 3% 0;
     font-size: 18px;
-    /* border-radius:  ; */
 }
 
 .inputbox button:hover {
