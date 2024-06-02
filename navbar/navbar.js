@@ -9,7 +9,7 @@ document.querySelector('.nav-bar').innerHTML = `
                 <a  class="nav-item green" href="/"><span>Home</span></a>
                 <a  class="nav-item green" href="appointments.html"><span>Appointments</span></a>
                 <a  class="nav-item green" href="specialist.html"><span>Specialists</span></a>
-                <a  class="nav-item blue" href="contact.html"><span>Contact</span></a>
+                <a  class="nav-item blue" href="contactUs.html"><span>Contact</span></a>
                 <a  class="nav-item blue" href="signup.html"><span>Account</span></a>
             </div>
 
@@ -25,7 +25,7 @@ document.querySelector('.nav-bar').innerHTML = `
                 <a  class="nav-item green" href="/"><span>Home</span></a>
                 <a  class="nav-item green" href="appointments.html"><span>Appointments</span></a>
                 <a  class="nav-item green" href="specialist.html"><span>Specialists</span></a>
-                <a  class="nav-item blue" href="contact.html"><span>Contact</span></a>
+                <a  class="nav-item blue" href="contactUs.html"><span>Contact</span></a>
                 <a  class="nav-item blue" href="download-app.html"><span>Download App</span></a>
                 <a  class="nav-item blue" href="registerAsDoctor.html"><span>Register as a Specialist</span></a>
                 <a  class="nav-item blue" href="signup.html"><span>Account</span></a>
