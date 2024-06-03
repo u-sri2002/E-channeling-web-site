@@ -110,4 +110,15 @@ body{
     .pd-mobile{
         padding: 0% 10%;
     }
+
+    .app-hero{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .a-btn-2 button{
+        margin-top: 3%;
+    }
 }
+
