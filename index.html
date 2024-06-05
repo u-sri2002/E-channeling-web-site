@@ -5,21 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to eDOC24</title>
 
-    <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Blocks CSS-->   
+    <link rel="stylesheet" href="./partials/blocks.css">
+
     <!-- Main CSS-->
-    <link rel="stylesheet" href="./css/styles.css">
-    
-    <!-- Reset CSS-->   
-    <link rel="stylesheet" href="./css/reset.css">
-    
-    <!-- Navbar CSS--> 
-    <link rel="stylesheet" href="./navbar/navbar.css">
-
-    <!-- Footer CSS -->
-    <link rel="stylesheet" href="./footer/footer.css">
-
+    <link rel="stylesheet" href="./css/main.css">
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
 
@@ -35,7 +27,7 @@
         <div class="hero-left">
             <h1>We Care About Your Health</h1>
             <p>Welcome to the eChannelling, Sri Lanka's leading private healthcare provider. Our platform ensures seamless access to compassionate and innovative healthcare services, reflecting our unwavering commitment to outstanding patient outcomes. Trust us to connect you with top-tier medical professionals and facilities, dedicated to delivering exceptional care.</p>
-            <button class="ex-btn blue" onclick="redirectToPage('contactUs.html');">Contact Us</button>
+            <button class="ex-btn blue" onclick="redirectToPage('contact-us.html');">Contact Us</button>
         </div>
 
         <div class="hero-right">
@@ -157,29 +149,41 @@
 
         <p>Are you a healthcare professional seeking to expand your reach and connect with more patients? Join our platform and become part of a community dedicated to providing accessible and convenient healthcare services.</p>
 
-        <button class="ex-btn purple" onclick="redirectToPage('registerAsDoctor.html');">Register As a Specialist</button>
+        <button class="ex-btn purple" onclick="redirectToPage('register-as-doctor.html');">Register As a Specialist</button>
     </section>
-
-    <!-- Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
     <!-- Footer -->
     <footer></footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Blocks JS -->
+    <script src="./partials/blocks.js"></script>
+
     <!-- Main JS -->
-    <script src="./js/scripts.js"></script>
-
-    <!-- Navbar JS -->
-    <script defer src="./navbar/navbar.js"></script>
-
-    <!-- Footer JS -->
-    <script src="./footer/footer.js"></script>
-
+    <script src="./js/main.js"></script>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
     <!-- Slick JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Slick Slider -->
+    <script type="text/javascript">
+        $(document).ready(function(){       
+            $('.ad-fade').slick({
+                dots: true,
+                infinite: true,
+                speed: 700,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+            });
+        });
+    </script>
 
     <!-- Count on scroll -->
     <script>
@@ -224,24 +228,6 @@
             $(window).on('scroll', checkCounters);
             $(window).on('load', checkCounters);
 
-        });
-    </script>
-
-    <!-- Slick Slider -->
-    <script type="text/javascript">
-        $(document).ready(function(){       
-            $('.ad-fade').slick({
-                dots: true,
-                infinite: true,
-                speed: 700,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                prevArrow: $('.prev'),
-                nextArrow: $('.next'),
-            });
         });
     </script>
 
