@@ -1,19 +1,18 @@
 body{
     background-image: linear-gradient(to right, #f3fff5, #e4eeff);
-    font-family: Poppins;
 }
 
 .a-heading{
     font-size: 2.3rem;
     color: #396CCD;
-    font-weight: 300;
+    font-weight: var(--fw-semi-bold);
     text-align: center;
     margin-top: 2%;
     padding: 2%;
 }
 
 #a-content{
-    font-weight: 300;
+    font-weight: var(--fw-medium);
     text-align: center;
     padding: 0 2%;
     margin: 3% 0 3% 0;
@@ -33,7 +32,7 @@ body{
 .a-form label{
     color: white;
     margin-top: 6%;
-    font-weight: 400;
+    font-weight: var(--fw-semi-bold);
     font-size: 1.2rem;
     margin: 2% 2%;
 }
@@ -70,7 +69,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     margin-bottom: 5%;
     padding: 5% 2%;
 }
@@ -81,7 +79,6 @@ body{
 }
 
 .a-btn-2{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +86,6 @@ body{
 }
 
 .a-btn-2 button{
-
     background-color: #00BF63;
     color: white;
     font-weight: 500;
@@ -103,10 +99,10 @@ body{
     font-size: 1.3rem;
 }
 
-/* responsive pading for mobiles  */
+/* responsive padding for mobiles  */
 
 @media (max-width: 580px) {
-   
+
     .pd-mobile{
         padding: 0% 10%;
     }

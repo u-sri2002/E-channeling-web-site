@@ -23,7 +23,7 @@ document.querySelector('.nav-bar').innerHTML = `
 
             <div class="nav-list nav-in">
                 <a  class="nav-item green" href="appointments.html"><span>Appointments</span></a>
-                <a  class="nav-item green" href="specialist.html"><span>Specialists</span></a>
+                <a  class="nav-item green" href="specialists.html"><span>Specialists</span></a>
                 <a  class="nav-item blue" href="contact-us.html"><span>Contact</span></a>
                 <a  class="nav-item blue" href="download-app.html"><span>Download App</span></a>
                 <a  class="nav-item blue" href="register-as-doctor.html"><span>Register as a Specialist</span></a>

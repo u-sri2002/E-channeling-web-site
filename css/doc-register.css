@@ -12,6 +12,7 @@ body{
 .r-title{
     margin-bottom: 2%;
     color: #396CCD;
+    font-weight: var(--fw-semi-bold);
 }
 
 .r-title span{
@@ -21,7 +22,7 @@ body{
 
 .r-hero-1 p{
     padding: 0 5%;
-    font-weight: 300;
+    font-weight: var(--fw-medium);
     font-size: 1.2rem;
 }
 

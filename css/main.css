@@ -1,9 +1,4 @@
 /* << Header */
-
-body{
-    font-family: Poppins;
-}
-
 .hero {
     display: grid;
     grid-template-columns: 65% 35%;
@@ -20,14 +15,14 @@ body{
 .hero .hero-left h1 {
     color: #5e89d5;
     font-size: 2.3rem;
-    font-weight: 600;
+    font-weight: var(--fw-extra-bold);
     line-height: 1.4;
 }
 
 .hero .hero-left p {
     color: rgba(0, 0, 0, 0.758);
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: var(--fw-medium);
     line-height: 1.6;
     text-align: justify;
     margin: 2.2rem 0;
@@ -43,7 +38,7 @@ body{
 .hero .hero-right .hotline {
     color: #5e89d5;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: var(--fw-medium);
 }
 
 .hero .hero-right img {
@@ -88,7 +83,7 @@ body{
 
 .content-container h2 {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: var(--fw-bold);
     color: #33cc82;
     margin-bottom: 1rem;
 }
@@ -110,7 +105,7 @@ body{
     z-index: 1000;
     top: 40%;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: var(--fw-extra-bold);
     cursor: pointer;
 }
 
@@ -152,12 +147,12 @@ body{
 
 .ad-download-app h6 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: var(--fw-extra-bold);
 }
 
 .ad-download-app-row span {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: var(--fw-medium);
     margin-right: 1rem;
 }
 
@@ -193,12 +188,12 @@ body{
 
 .ad-refund h6 {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: var(--fw-extra-bold);
 }
 
 .ad-refund-row span {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: var(--fw-medium);
     margin-right: 1rem;
 }
 
@@ -222,7 +217,7 @@ body{
 }
 
 .sector-title {
-    font-weight: 600px;
+    font-weight: var(--fw-semi-bold);
     font-size: 2.4rem;
     margin: 2rem auto;
 }
@@ -260,14 +255,14 @@ body{
 }
 
 .spe-card-title {
-    font-weight: 400;
+    font-weight: var(--fw-medium);
     font-size: 1.2rem;
     margin: 1rem auto;
 }
 
 .spe-card-desc {
     text-align: center;
-    font-weight: 300;
+    font-weight: var(--fw-light);
     font-size: 1.1rem;
 }
 
@@ -279,7 +274,7 @@ body{
 }
 
 .spe-more-text {
-    font-weight: 500;
+    font-weight: var(--fw-bold);
     font-size: 1.6rem;
     margin: 0.6rem;
 }
@@ -322,7 +317,7 @@ body{
 }
 
 .ser-card-title {
-    font-weight: 400;
+    font-weight: var(--fw-medium);
     font-size: 1.1rem;
     margin: 1rem 0.5rem;
 }
@@ -335,7 +330,7 @@ body{
 }
 
 .ser-more-text {
-    font-weight: 500;
+    font-weight: var(--fw-bold);
     font-size: 1.4rem;
     margin: 0.4rem;
 }
@@ -357,7 +352,7 @@ body{
 
 .fac-description {
     text-align: left;
-    font-weight: 300;
+    font-weight: var(--fw-light);
     font-size: 1.1rem;
 }
 
@@ -381,17 +376,17 @@ body{
 
 .fac-box-num {
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: var(--fw-bold);
 }
 
 .counter {
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: var(--fw-extra-bold);
 }
 
 .fac-box-text {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: var(--fw-semi-bold);
     text-align: center;
 }
 /* facilities >> */
@@ -408,61 +403,16 @@ body{
 
 .join-us h6 {
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: var(--fw-medium);
     color: #202020;
 }
 
 .join-us p {
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: var(--fw-light);
     color: #202020;
 }
 /* Join-us >> */
-
-
-/* << custom buttons */
-.ex-btn {
-    color: #ffffff;
-    width: fit-content;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.ex-btn.green {
-    background-color: #33cc82;
-}
-
-.ex-btn.blue {
-    background-color: #5e89d5;
-}
-
-.ex-btn.purple {
-    background-color: #7f4491;
-}
-
-.ex-btn.white {
-    background-color: #ffffff;
-}
-
-.ex-btn.green:hover {
-    background-color: #2fae70;
-}
-
-.ex-btn.blue:hover {
-    background-color: #567ab9;
-}
-
-.ex-btn.purple:hover {
-    background-color: #693c76;
-}
-
-.ex-btn.white:hover {
-    background-color: #292828;
-}
-/* custom buttons >> */
 
 
 /* << Media Queries */

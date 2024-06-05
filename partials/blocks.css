@@ -2,11 +2,29 @@
 @import url("https://fonts.googleapis.com");
 @import url("https://fonts.gstatic.com");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Poppins Google font */
+
+
+/* << Variables */
+:root {
+    --fw-light: 200;
+    --fw-medium: 300;
+    --fw-semi-bold: 400;
+    --fw-bold: 500;
+    --fw-extra-bold: 600;
+
+    --ff-primary: "Poppins", sans-serif;
+}
+/* Variables >> */
+
 
 /* << CSS Reset */
 html {
     font-size: 16px;
-    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: var(--ff-primary);
 }
 
 * {
@@ -20,9 +38,52 @@ html {
 }
 /* CSS Reset >> */
 
-/* << NavBar */
+/* << Custom Buttons */
+.ex-btn {
+    color: #ffffff;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: var(--fw-semi-bold);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
-/* << Navigation */
+.ex-btn.green {
+    background-color: #33cc82;
+}
+
+.ex-btn.blue {
+    background-color: #5e89d5;
+}
+
+.ex-btn.purple {
+    background-color: #7f4491;
+}
+
+.ex-btn.white {
+    background-color: #ffffff;
+}
+
+.ex-btn.green:hover {
+    background-color: #2fae70;
+}
+
+.ex-btn.blue:hover {
+    background-color: #567ab9;
+}
+
+.ex-btn.purple:hover {
+    background-color: #693c76;
+}
+
+.ex-btn.white:hover {
+    background-color: #292828;
+}
+/* Custom Buttons >> */
+
+
+/* << NavBar */
 .nav-bar {
     width: 100%;
     display: flex;
@@ -62,11 +123,12 @@ html {
     text-decoration: none;
     display: inline-block;
     padding: 4px 10px;
+    font-family: var(--ff-primary);
     /* transition: background-color 0.2s ease; */
 }
 
 .nav-item span{
-    font-weight: 400;
+    font-weight: var(--fw-medium);
     font-size: 1.18rem;
 }
 
@@ -99,7 +161,7 @@ html {
     width: 100%;
     padding: 0.5rem;
 }
-/* Navigation >> */
+/* NavBar >> */
 
 
 /* << Menu Icon */
