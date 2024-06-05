@@ -1,12 +1,11 @@
 document.querySelector('.nav-bar').innerHTML = `
 <div class="nav-logo">
-            <a href="https://u-sri2002.github.io/E-channeling-web-site/index.html"><img src="./img/nav-logo.png" alt="eDoc24 Logo"></a>
+            <a href="./index.html"><img src="./img/nav-logo.png" alt="eDoc24 Logo"></a>
         </div>
 
         <nav class="top-nav">
 
             <div class="nav-list nav-out">
-                <a  class="nav-item green" href="/"><span>Home</span></a>
                 <a  class="nav-item green" href="appointments.html"><span>Appointments</span></a>
                 <a  class="nav-item green" href="specialist.html"><span>Specialists</span></a>
                 <a  class="nav-item blue" href="contactUs.html"><span>Contact</span></a>
@@ -22,7 +21,6 @@ document.querySelector('.nav-bar').innerHTML = `
             </button>
 
             <div class="nav-list nav-in">
-                <a  class="nav-item green" href="/"><span>Home</span></a>
                 <a  class="nav-item green" href="appointments.html"><span>Appointments</span></a>
                 <a  class="nav-item green" href="specialist.html"><span>Specialists</span></a>
                 <a  class="nav-item blue" href="contactUs.html"><span>Contact</span></a>
