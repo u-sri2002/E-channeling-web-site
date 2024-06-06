@@ -457,14 +457,14 @@
     .ad-download-app-row button {
         margin-left: 0.2rem;
     }
-    .ad-refund h6 {
+    .ad-sign-up h6 {
         font-size: 1.1rem;
     }
-    .ad-refund-row span {
+    .ad-sign-up-row span {
         font-size: 1rem;
         margin-right: 0.2rem;
     }
-    .ad-refund-row button {
+    .ad-sign-up-row button {
         margin-left: 0.2rem;
     }
 }
@@ -500,14 +500,14 @@
     .ad-download-app-row button {
         margin-left: 0.6rem;
     }
-    .ad-refund h6 {
+    .ad-sign-up h6 {
         font-size: 1.3rem;
     }
-    .ad-refund-row span {
+    .ad-sign-up-row span {
         font-size: 1.1rem;
         margin-right: 0.6rem;
     }
-    .ad-refund-row button {
+    .ad-sign-up-row button {
         margin-left: 0.6rem;
     }
 }
