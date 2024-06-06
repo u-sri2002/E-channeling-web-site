@@ -13,7 +13,7 @@
 }
 
 .hero .hero-left h1 {
-    color: #5e89d5;
+    color: var(--clr-blue);
     font-size: 2.3rem;
     font-weight: var(--fw-extra-bold);
     line-height: 1.4;
@@ -36,7 +36,7 @@
 }
 
 .hero .hero-right .hotline {
-    color: #5e89d5;
+    color: var(--clr-blue);
     font-size: 2rem;
     font-weight: var(--fw-medium);
 }
@@ -55,7 +55,7 @@
 }
 
 .img-container {
-    background-image: url('../img/bg-1.jpg');
+    background-image: url('../img/psychologist-consulting-patient.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,12 +84,12 @@
 .content-container h2 {
     font-size: 2rem;
     font-weight: var(--fw-bold);
-    color: #33cc82;
+    color: var(--clr-green);
     margin-bottom: 1rem;
 }
 
 .channel-doctor-banner:hover .img-container {
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 /* Channel-Your-Doctor Banner >> */
 
@@ -128,7 +128,7 @@
 
 /* << Ad download-app */
 .ad-download-app {
-    background-image: linear-gradient(to right, #6790e1, #3266c0);
+    background-image: var(--gradient-ad-blue);
     color: #fff;
     display: flex;
     flex-direction:column;
@@ -157,7 +157,7 @@
 }
 
 .ad-download-app-row button {
-    color: #37376b;
+    color: var(--clr-blue);
     margin-left: 1rem;
 }
 
@@ -168,41 +168,41 @@
 
 
 /* << Ad Refund */
-.ad-refund {
-    background-image: linear-gradient(to right, rgb(123, 53, 172), #8c14a1);
+.ad-sign-up {
+    background-image: var(--gradient-ad-green);
     color: #fff;
     display: flex;
     flex-direction:column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     padding: 1.2rem 0;
     text-align: center;
 }
 
-.ad-refund-row {
+.ad-sign-up-row {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.ad-refund h6 {
+.ad-sign-up h6 {
     font-size: 1.5rem;
     font-weight: var(--fw-extra-bold);
 }
 
-.ad-refund-row span {
+.ad-sign-up-row span {
     font-size: 1.2rem;
     font-weight: var(--fw-medium);
     margin-right: 1rem;
 }
 
-.ad-refund-row button {
-    color: #620d7c;
+.ad-sign-up-row button {
+    color: var(--clr-green);
     margin-left: 1rem;
 }
 
-.ad-refund-row button:hover {
+.ad-sign-up-row button:hover {
     color: #ffffff;
 }
 /* Ad Refund >> */
