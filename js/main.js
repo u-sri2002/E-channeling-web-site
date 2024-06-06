@@ -103,14 +103,17 @@ const serData = [
     {
         "title": "Health Packages",
         "img": "Cardiologist"
-    },
+    },{
+        "title": "Health Information",
+        "img": "Cardiologist"
+    }
 ];
 
 function servicesCardSet() {
     const serCardContainer = document.querySelector('.ser-card-container');
 
     let j = 0;
-    while(j < 7) {
+    while(j < 8) {
 
         let serCardObj = serData[j];
 
@@ -130,15 +133,6 @@ function servicesCardSet() {
 
         j++;
     }
-
-    let serFinalCard = document.createElement('div');
-    serFinalCard.classList.add('ser-card','final-card');
-
-    serFinalCard.innerHTML = `
-        <span class="ser-more-text">See More</span>
-        <img class="ser-more-icon" src="./img/see-more-arrow.svg" alt="">`;
-
-    serCardContainer.appendChild(serFinalCard);
 }
 
 servicesCardSet();

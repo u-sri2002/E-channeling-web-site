@@ -306,9 +306,8 @@
     align-items: center;
     justify-content: left;
     padding: 1.2rem 1rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    color: #356441;
+    background-color: #ffffff;
+    color: rgb(31, 106, 43);
     height: 120px;
 }
 
