@@ -105,3 +105,8 @@ body{
     font-weight: var(--fw-medium);
 }
 
+#log-terms{
+    font-size: .8rem;
+    font-style: italic;
+}
+

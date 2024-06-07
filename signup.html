@@ -13,6 +13,17 @@
     <!-- SignUp-Login CSS -->
     <link rel="stylesheet" href="./css/signup-login.css">
 
+    <script>
+
+        function redirectToLogin(event){
+            event.preventDefault();
+            window.location.href = './login.html';
+        }
+
+    </script>
+
+
+
 </head>
 
 
@@ -77,7 +88,7 @@
                     </div>
 
                     <div class="submit" id="acc-btn">
-                        <button class="btn btn-outline-secondary form-control">Already have an account</button>
+                        <button class="btn btn-outline-secondary form-control" onclick="redirectToLogin(event)">Already have an account</button>
                     </div>          
 
                 </form>
