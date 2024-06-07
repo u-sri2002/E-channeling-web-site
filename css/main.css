@@ -248,6 +248,12 @@
     border-radius: 20px;
     color: #354c64;
     max-height: 28rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.spe-card:hover .hidden-channel {
+    display: block;
 }
 
 .spe-card-img {
@@ -266,22 +272,22 @@
     font-size: 1.1rem;
 }
 
-.spe-card.final-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.see-more-arrow {
+    width: 2rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    opacity: 0.5;
 }
 
-.spe-more-text {
-    font-weight: var(--fw-bold);
-    font-size: 1.6rem;
-    margin: 0.6rem;
+.spe-card:hover {
+    box-shadow: 0 0 10px 1px #6793b19d;
 }
 
-.spe-more-icon {
-    width: 40px;
+.spe-card:hover .see-more-arrow {
+    opacity: 1;
 }
+
 /* Specialists >> */
 
 
@@ -319,23 +325,6 @@
     font-weight: var(--fw-medium);
     font-size: 1.1rem;
     margin: 1rem 0.5rem;
-}
-
-.ser-card.final-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.ser-more-text {
-    font-weight: var(--fw-bold);
-    font-size: 1.4rem;
-    margin: 0.4rem;
-}
-
-.ser-more-icon {
-    width: 2rem;
 }
 /* Services >> */
 
