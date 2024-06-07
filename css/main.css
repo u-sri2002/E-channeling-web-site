@@ -414,6 +414,88 @@
 /* Join-us >> */
 
 
+/* ====================== */
+
+
+/* << Specialists Page */
+    .doc-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2.4rem 0;
+    }
+
+    .doc-table-container{
+        padding: 2rem 2rem;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, #0072B8, #00A5DF);
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .doc-table {
+        width: 100%;
+        margin: 1rem;
+    }
+
+    .doc-table tr, th, td{
+        padding: 0.5% 1%;
+        border: 1px solid rgb(156, 204, 166);
+        font-size: 1rem;
+        font-weight: var(--fw-medium);
+    }
+
+    .doc-table tbody {
+        border: 2px solid rgb(129, 179, 133);
+    }
+
+    .spec-head {
+        background-color: rgb(92, 169, 91);
+        border: 2px solid rgb(73, 138, 87);
+    }
+
+    .spec-head {
+        text-align: center;
+        color: white;
+        text-transform: capitalize;
+        font-weight: var(--fw-bold);
+        font-size: 1.5rem;
+    }
+
+    .doc-table-container .doc-tbody:nth-of-type(odd) {
+        background-color: #dce2ef;
+    }
+
+    .doc-table-container .doc-tbody:nth-of-type(even) {
+        background-color: #dffadf;
+    }
+
+    .available-true {
+        color: green;
+    }
+
+    .available-false {
+        color: rgb(219, 27, 27);
+    }
+
+    .channel-true {
+        cursor: pointer;
+    }
+
+    .channel-false {
+        cursor: not-allowed;
+    }
+
+/* Specialists Page >> */
+
+
+/* ====================== */
+
+
 /* << Media Queries */
 @media only screen and (max-width: 576px) {
     .spe-card {
