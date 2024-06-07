@@ -214,3 +214,15 @@ function redirectToPage(page) {
         window.location.href = window.location.origin + "/" + page;
     }
 }
+
+function redirectToPageId(page, id) {
+    
+    // For Github Pages (Remove for pure project)
+    if (window.location.origin === "https://u-sri2002.github.io") {
+        window.location.href = window.location.origin + "/E-channeling-web-site/" + page + "#" + id;
+    
+     // For local
+    }else {
+        window.location.href = window.location.origin + "/" + page + "#" + id;
+    }
+}

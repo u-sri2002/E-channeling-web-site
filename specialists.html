@@ -72,6 +72,7 @@
             const newDocTable = document.createElement('table');
             newDocTable.classList.add('doc-table');
             newDocTable.classList.add('doc-table-' + spec);
+            newDocTable.setAttribute('id', 'doc-table-' + spec);
 
             const specHead = document.createElement('thead');
             specHead.innerHTML = `
@@ -118,6 +119,47 @@
             sessionStorage.setItem('reg', reg.toString());
             redirectToPage('appointments.html');
         }
+    </script>
+
+    <script>
+        // Scroll to table
+        document.addEventListener("DOMContentLoaded", function() {
+            function adjustScrollPosition() {
+                var headerHeight = document.querySelector('.nav-bar').offsetHeight;
+                if (window.location.hash) {
+                    var element = document.querySelector(window.location.hash);
+                    if (element) {
+                        var elementPosition = element.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                        window.scrollTo({
+                            top: elementPosition,
+                            behavior: 'auto'
+                            // behavior: 'smoooth'
+                        });
+                    }
+                }
+            }
+
+            window.addEventListener("hashchange", adjustScrollPosition);
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var targetId = this.getAttribute('href');
+                    var targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        var headerHeight = document.querySelector('.nav-bar').offsetHeight;
+                        var targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                        window.history.pushState(null, null, targetId);
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'auto'
+                        });
+                    }
+                });
+            });
+
+            setTimeout(adjustScrollPosition, 100);
+        });
     </script>
 
 </body>
