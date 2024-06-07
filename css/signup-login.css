@@ -7,6 +7,18 @@ body{
     margin-bottom: 5rem;
 }
 
+#form-logo{
+    position: absolute;
+    margin: 1%;
+    font-weight: var(--fw-bold);
+    color: var(--clr-blue);
+}
+
+#form-logo span{
+    font-weight: var(--fw-bold);
+    color: var(--clr-green);
+}
+
 .acc-separator {
     display: flex;
     align-items: center;
@@ -22,19 +34,46 @@ body{
 .acc-separator span {
     padding: 0 10px;
     color: #999;
+    font-weight: var(--fw-medium);
 }
 
+.acc-img{
+    padding: 0%;
+}
 
+.acc-form-section{
+    padding: 0%;
+}
 
 .acc-img img{
     object-fit: cover;
     height: 100%;
     width: 100%;
+    border-radius: 2rem 0rem 0rem 2rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.393), -1px -1px 10px rgba(0, 0, 0, 0.393);
+
 }
 
 #acc-form{
     padding: 15% 5% 8% 10%;
     margin: 0%;
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.393), -1px -1px 10px rgba(0, 0, 0, 0.393);
+
+}
+
+@media(max-width: 768px){
+    .acc-img img{
+        border-radius: 2rem 2rem 0rem 0rem;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.393), -1px -1px 5px rgba(0, 0, 0, 0.393);
+    
+    }
+    
+    #acc-form{
+        border-radius: 0rem 0rem 2rem 2rem;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.393), -1px -1px 5px rgba(0, 0, 0, 0.393);
+    
+    }
 }
 
 .acc-form-label{
@@ -54,3 +93,15 @@ body{
 #acc-btn{
     margin-top: 5%;
 }
+
+.acc-form-label label{
+    color: black;
+    font-weight: var(--fw-semi-bold);
+    font-size: 1rem;
+}
+
+.acc-form-label input{
+    font-style: italic;
+    font-weight: var(--fw-medium);
+}
+
