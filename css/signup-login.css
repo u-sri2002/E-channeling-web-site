@@ -90,7 +90,12 @@ body{
     opacity: 85%;
 }
 
-#acc-btn{
+#acc-form input{
+    border-radius: 10px;
+}
+
+#acc-btn button{
+    border-radius: 10px;
     margin-top: 5%;
 }
 
@@ -108,5 +113,47 @@ body{
 #log-terms{
     font-size: .8rem;
     font-style: italic;
+}
+
+/* validation  */
+
+
+small{
+    margin: 10% 0%;
+    padding-left: 1%;
+}
+
+.form-fields.error small{
+    color: red;
+    opacity: 70%;
+    font-family:  Calibri;
+}
+
+.form-fields.error input{
+    border: 2px solid  #FFA27F;  
+}
+
+.form-fields.success input{
+    border: 2px solid #2ecc71;  
+}
+
+i{
+    margin: 5% 0%;
+    padding: 0;
+}
+
+i svg{
+    fill: #FA7070;
+    margin: 0;
+    padding: 0;
+    width: 3%;
+}
+
+.hide-text small{
+    visibility: hidden;
+}
+
+.hide-text i{
+    visibility: hidden;
 }
 
