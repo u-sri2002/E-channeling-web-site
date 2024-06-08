@@ -8,6 +8,7 @@ const residence = document.getElementById("residence");
 const uploadFile = document.getElementById("uploadFile")
 
 
+// function to identify the errors
 function sendErrorFor(input, message){
     //send error message
     let smallTag = input.parentElement.querySelector("small");
@@ -21,15 +22,34 @@ function sendErrorFor(input, message){
     </svg>`;
 }
 
+
 //send styles to success
 function sendSuccessFor(input){
     input.parentElement.className = "form-fields success hide-text"
 }
 
+
 // function to check correct email format
 function isEmail(email){
     const emailRegex =  /^(([^<>()\].,;:\s@"]+(\.[()\[\\.,;:\s@"]+)*)|(".+"))@(([0−9]1,3\.[0−9]1,3\.[0−9]1,3\.[0−9]1,3)|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return emailRegex.test(email);
+}
+
+
+// function for mobile validation
+function validateMobile(){
+    let mobileValue = mobile.value.trim();
+    const mobileRegex = /^[0-9]{10}$/; // For a 10-digit mobile number
+
+    if (mobileValue === ''){
+        sendErrorFor(mobile, "Mobile number is required ");
+    }
+    else if (! mobileRegex.test(mobileValue)){
+        sendErrorFor(mobile, "Please enter a valid number");
+    }
+    else{
+        sendSuccessFor(mobile);
+    }
 }
 
 
@@ -74,7 +94,7 @@ function formInputsValidation(){
     // userName validation 
     if(UserNameValue === ''){
         //send error
-        sendErrorFor(userName, "User name can't be Null");      
+        sendErrorFor(userName, "Username is required");      
     }
     else{
         //send success
@@ -97,15 +117,7 @@ function formInputsValidation(){
 
 
     // mobile validation 
-    if (mobileValue === ''){
-        sendErrorFor(mobile, "Mobile number is required ");
-    }
-    else if ( mobileValue.length != 10){
-        sendErrorFor(mobile, "Mobile number should have 10 numbers ");
-    }
-    else{
-        sendSuccessFor(mobile);
-    }
+    validateMobile();
 
 
     // year validation 

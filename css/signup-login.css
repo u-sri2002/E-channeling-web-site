@@ -1,57 +1,166 @@
 body{
-    background-color: aqua; margin: 0;
-    padding: 0;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), Gradienturl('../img/hallway-5979689_1920.jpg') no-repeat center center; Image */
     background-image: linear-gradient(to right, #f3fff5, #e4eeff);
-    background-size: cover;
 }
 
-
-.field input{
-    outline: none;
-    padding: 0 15px;
-    border: 1px solid #cacaca;
-    border-radius: 5px;
+#acc-row{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
 }
 
-.field input:focus{
-    border-bottom-width: 2px ;
+#form-logo{
+    position: absolute;
+    margin: 1%;
+    font-weight: var(--fw-bold);
+    color: var(--clr-blue);
 }
 
-
-.input-field button{
-    color: #fff;
-    background-color: #0171d3;
-    transition: all 0.3s ease;
-    cursor: pointer;
+#form-logo span{
+    font-weight: var(--fw-bold);
+    color: var(--clr-green);
 }
 
-.input-field button:hover{
-    background-color: #0171d3;
-}
-
-
-.form-link{
-    height: 30px;
-    width: 100%;
+.acc-separator {
+    display: flex;
+    align-items: center;
     text-align: center;
-    margin-top: 10px;
+    margin: 2% 0;
+}
+.acc-separator hr {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background: black;
+}
+.acc-separator span {
+    padding: 0 10px;
+    color: #999;
+    font-weight: var(--fw-medium);
+}
+
+.acc-img{
+    padding: 0%;
+}
+
+.acc-form-section{
+    padding: 0%;
+}
+
+.acc-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem 0rem 0rem 2rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.393), -1px -1px 10px rgba(0, 0, 0, 0.393);
+}
+
+#acc-form{
+    padding: 15% 5% 8% 10%;
+    margin: 0%;
+    border-radius: 0 2rem 2rem 0;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.393), -1px -1px 10px rgba(0, 0, 0, 0.393);
 }
 
 
-.form-link span,
-.form-link a{
-    font-size: 14px;
-    font-weight: 400;
-    color: #232823;
+/* for below the tablet screen sizes */
+@media(max-width: 768px){
+    .acc-img img{
+        border-radius: 2rem 2rem 0rem 0rem;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.393), -1px -1px 5px rgba(0, 0, 0, 0.393);    
+    }
+    
+    #acc-form{
+        border-radius: 0rem 0rem 2rem 2rem;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.393), -1px -1px 5px rgba(0, 0, 0, 0.393);
+    
+    }
 }
 
-.form a{
-    color: #0171d3;
-    text-decoration: none;
+
+.acc-form-label{
+    margin-top: 2%;
 }
 
-.form a:hover{
-    text-decoration: underline;
+#acc-form h2{
+    font-size: 2.2rem;
+}
+
+#acc-form h3{
+    margin-bottom: 10%;
+    font-size: 1.2rem;
+    opacity: 85%;
+}
+
+#acc-form input{
+    border-radius: 10px;
+}
+
+#acc-btn button{
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.acc-form-label label{
+    color: black;
+    font-weight: var(--fw-semi-bold);
+    font-size: 1rem;
+}
+
+.acc-form-label input{
+    font-style: italic;
+    font-weight: var(--fw-medium);
+}
+
+#log-terms{
+    font-size: .8rem;
+    font-style: italic;
+}
+
+/* validation  */
+
+.hide-text small{
+    visibility: hidden;
+}
+
+.hide-text i{
+    visibility: hidden;
+}
+
+small{
+    margin: 10% 0%;
+    padding-left: 1%;
+}
+
+.form-fields.error small{
+    color: red;
+    opacity: 70%;
+    font-family:  Calibri;
+}
+
+.form-fields.error input{
+    border: 2px solid  #FFA27F;  
+}
+
+.form-fields.success input{
+    border: 2px solid #2ecc71;  
+}
+
+i{
+    margin: 5% 0%;
+    padding: 0;
+}
+
+i svg{
+    fill: #FA7070;
+    margin: 0;
+    padding: 0;
+    width: 3%;
+}
+
+.hide-text small{
+    visibility: hidden;
+}
+
+.hide-text i{
+    visibility: hidden;
 }
 
