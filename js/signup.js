@@ -31,7 +31,7 @@ function sendErrorFor(input, message){
 
 //send styles to success
 function sendSuccessFor(input){
-    input.parentElement.className = "acc-form-label form-fields success"
+    input.parentElement.className = "acc-form-label form-fields success hide-text"
 }
 
 
@@ -39,6 +39,22 @@ function sendSuccessFor(input){
 function isEmail(email){
     const emailRegex =  /^(([^<>()\].,;:\s@"]+(\.[()\[\\.,;:\s@"]+)*)|(".+"))@(([0−9]1,3\.[0−9]1,3\.[0−9]1,3\.[0−9]1,3)|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return emailRegex.test(email);
+}
+
+// function for mobile number validation
+function validateMobile(){
+    let mobileValue = mobile.value.trim();
+    const mobileRegex = /^[0-9]{10}$/; // For a 10-digit mobile number
+
+    if (mobileValue === ''){
+        sendErrorFor(mobile, "Mobile number is required ");
+    }
+    else if (! mobileRegex.test(mobileValue)){
+        sendErrorFor(mobile, "Please enter a valid number");
+    }
+    else{
+        sendSuccessFor(mobile);
+    }
 }
 
 
@@ -74,13 +90,12 @@ function formInputsValidation(){
     // get the values from inputs 
     let UserNameValue = userName.value.trim();
     let emailValue = email.value.trim();
-    let mobileValue = mobile.value.trim();
 
 
     // userName validation 
     if(UserNameValue === ''){
         //send error
-        sendErrorFor(userName, "User name is required");      
+        sendErrorFor(userName, "Username is required");      
     }
     else{
         //send success
@@ -103,16 +118,7 @@ function formInputsValidation(){
 
 
     // mobile validation 
-    if (mobileValue === ''){
-        sendErrorFor(mobile, "Mobile number is required ");
-    }
-    else if ( mobileValue.length != 10){
-        sendErrorFor(mobile, "Mobile number should have 10 numbers ");
-    }
-    else{
-        sendSuccessFor(mobile);
-    }
-
+    validateMobile();
        
     // call function for password validation 
     validatePassword();
