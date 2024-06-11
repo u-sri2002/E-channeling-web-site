@@ -46,6 +46,7 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     font-weight: 200;
+    opacity: inherit;
 }
 /* CSS Reset >> */
 
