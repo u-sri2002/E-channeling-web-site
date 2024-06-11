@@ -39,43 +39,23 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 pd-mobile">
     
                             <!-- doctor name  -->
-                            <label for="name">Doctor's Name</label> <br>
-                            <input type="text" class="box form-control">
+                            <label for="doc-name">Doctor's Name</label> <br>
+                            <select id="doc-name" name="doc-name" class="form-control box">
+                                <!-- <option value="allergy-immunology">Allergy and Immunology</option>
+                                <option value="anesthesiology">Anesthesiology</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="dermatology">Dermatology</option>
+                                <option value="emergency-medicine">Emergency Medicine</option>                                 -->
+                            </select> 
     
                             <!-- Specialization -->
                             <label for="specialty">Specialization</label> <br>
                             <select id="specialty" name="specialty" class="form-control box">
-                                <option value="allergy-immunology">Allergy and Immunology</option>
+                                <!-- <option value="allergy-immunology">Allergy and Immunology</option>
                                 <option value="anesthesiology">Anesthesiology</option>
                                 <option value="cardiology">Cardiology</option>
                                 <option value="dermatology">Dermatology</option>
-                                <option value="emergency-medicine">Emergency Medicine</option>
-                                <option value="endocrinology">Endocrinology</option>
-                                <option value="family-medicine">Family Medicine</option>
-                                <option value="gastroenterology">Gastroenterology</option>
-                                <option value="geriatrics">Geriatrics</option>
-                                <option value="hematology">Hematology</option>
-                                <option value="infectious-disease">Infectious Disease</option>
-                                <option value="internal-medicine">Internal Medicine</option>
-                                <option value="medical-genetics">Medical Genetics</option>
-                                <option value="nephrology">Nephrology</option>
-                                <option value="neurology">Neurology</option>
-                                <option value="ob-gyn">Obstetrics and Gynecology (OB/GYN)</option>
-                                <option value="oncology">Oncology</option>
-                                <option value="ophthalmology">Ophthalmology</option>
-                                <option value="orthopedic-surgery">Orthopedic Surgery</option>
-                                <option value="ent">Otolaryngology (ENT)</option>
-                                <option value="pediatrics">Pediatrics</option>
-                                <option value="physical-medicine">Physical Medicine and Rehabilitation</option>
-                                <option value="plastic-surgery">Plastic Surgery</option>
-                                <option value="podiatry">Podiatry</option>
-                                <option value="psychiatry">Psychiatry</option>
-                                <option value="pulmonology">Pulmonology</option>
-                                <option value="radiology">Radiology</option>
-                                <option value="rheumatology">Rheumatology</option>
-                                <option value="surgery">Surgery</option>
-                                <option value="urology">Urology</option>
-                                <option value="vascular-surgery">Vascular Surgery</option>
+                                <option value="emergency-medicine">Emergency Medicine</option>                                 -->
                             </select> 
     
                             <!-- location  -->
@@ -190,6 +170,119 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Blocks JS -->
     <script src="./partials/blocks.js"></script>
+
+    <!-- Data JS -->
+    <script src="./js/data.js"></script>
+
+    <script>
+
+        const docSelect = document.getElementById('doc-name');
+        const specSelect = document.getElementById('specialty');
+
+        // Fill doctor name and specialty options
+        document.addEventListener('DOMContentLoaded', () => {
+        
+            fillAllDocs();
+            fillAllSpecs();
+
+            // Check for session storage
+            if(sessionStorage.getItem('reg')) {
+
+                docList.forEach(doc => {
+                    if(sessionStorage.getItem('reg') === doc.reg.toString()) {
+                        docSelect.value = doc.name;
+                        specSelect.value = doc.position;
+                    }
+                });
+            }
+        });
+
+        // Change specialty on doctor select
+        docSelect.addEventListener('input', () => {
+            const selectedDoc = docSelect.value;
+
+            if(selectedDoc == '-- All Doctors') {
+                fillAllSpecs();
+                fillAllDocs();
+            }else {
+                docList.forEach(doc => {
+                    if(doc.name === selectedDoc) {
+                        specSelect.value = doc.position;
+                    }
+                });
+            }
+
+
+        });
+
+        // Add doctors on specialty select
+        specSelect.addEventListener('input', () => {
+            const selectedSpec = specSelect.value;
+
+            if(selectedSpec == '-- All Specializations') {
+                fillAllDocs();
+            }else {
+                docSelect.innerHTML ='';
+                makeAllDocsOption();
+                docList.forEach(doc => {
+                if(doc.position === selectedSpec) {
+                    const docOptElement = document.createElement('option');
+                    docOptElement.setAttribute('value', doc.name);
+                    docOptElement.innerText = doc.name;
+                    docSelect.appendChild(docOptElement);
+                }
+            });
+            }
+
+            
+        });
+
+        function makeAllDocsOption() {
+            const docOptElement = document.createElement('option');
+            docOptElement.setAttribute('value', '-- All Doctors');
+            docOptElement.innerText = '-- All Doctors';
+            docSelect.appendChild(docOptElement)
+        }
+        
+        function makeAllSpecsOption() {
+            const specOptElement = document.createElement('option');
+                specOptElement.setAttribute('value', '-- All Specializations');
+                specOptElement.innerText = '-- All Specializations';
+                specSelect.appendChild(specOptElement);
+        }
+
+        function fillAllDocs() {
+            docSelect.innerHTML ='';
+            makeAllDocsOption();
+            docList.forEach(doc => {
+                const docOptElement = document.createElement('option');
+                docOptElement.setAttribute('value', doc.name);
+                docOptElement.innerText = doc.name;
+                docSelect.appendChild(docOptElement);
+            }); 
+        }
+
+        function fillAllSpecs() {
+            specSelect.innerHTML ='';
+            
+            makeAllSpecsOption();
+
+            let specSet = [];
+            docList.forEach(doc => {
+                if(!specSet.includes(doc.position)) {
+                    specSet.push(doc.position);
+                }
+            });
+
+            specSet.forEach(spec => {
+                const specOptElement = document.createElement('option');
+                specOptElement.setAttribute('value', spec);
+                specOptElement.innerText = spec;
+                specSelect.appendChild(specOptElement);
+            }); 
+        }
+
+    </script>
 
 </body>
 </html>

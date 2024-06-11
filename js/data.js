@@ -2,27 +2,75 @@
 docList = [
     {
         "reg": 1100,
-        "name" : "John Doe",
+        "name" : "Alexander Smith",
         "position": "Cardiologist",
-        "specialization": "Cardiology",
+        "specialization": "Interventional Cardiology",
         "availability" : true
     },{
         "reg": 1200,
-        "name" : "Mark Ben",
+        "name" : "Benjamin Johnson",
         "position": "Cardiologist",
-        "specialization": "Cardiology",
+        "specialization": "Electrophysiology",
         "availability" : false
     },{
-        "reg": 2100,
-        "name" : "Mike Thomson",
-        "position": "Radiologist",
-        "specialization": "Radiology",
+        "reg": 2300,
+        "name" : "Christopher Williams",
+        "position": "Dermatologist",
+        "specialization": "Cosmetic Dermatology",
         "availability" : false
     },{
-        "reg": 1300,
-        "name" : "Kevin Johnson",
-        "position": "Cardiologist",
-        "specialization": "Cardiology",
+        "reg": 2500,
+        "name" : "Abigail Taylor",
+        "position": "Dermatologist",
+        "specialization": "Mohs Surgery",
+        "availability" : true
+    },{
+        "reg": 3300,
+        "name" : "Charlotte Wilson",
+        "position": "Endocrinologist",
+        "specialization": "Reproductive Endocrinology",
+        "availability" : true
+    },{
+        "reg": 4700,
+        "name" : "Daniel Brown",
+        "position": "Gastroenterologist",
+        "specialization": "Hepatology",
+        "availability" : true
+    },{
+        "reg": 4600,
+        "name" : "Ethan Davis",
+        "position": "Gastroenterologist",
+        "specialization": "Advanced Endoscopy",
+        "availability" : true
+    },{
+        "reg": 5500,
+        "name" : "Emily Moore",
+        "position": "Neurologist",
+        "specialization": "Neurocritical Care",
+        "availability" : true
+    },{
+        "reg": 6900,
+        "name" : "Isabella Anderson",
+        "position": "Oncologist",
+        "specialization": "Pediatric Oncology",
+        "availability" : true
+    },{
+        "reg": 7100,
+        "name" : "Olivia Thomas",
+        "position": "Psychiatrist",
+        "specialization": "Geriatric Psychiatry",
+        "availability" : true
+    },{
+        "reg": 7800,
+        "name" : "Ethan Davis",
+        "position": "Psychiatrist",
+        "specialization": "Child and Adolescent Psychiatry",
+        "availability" : true
+    },{
+        "reg": 8200,
+        "name" : "William Miller",
+        "position": "Pulmonologist",
+        "specialization": "Critical Care Medicine",
         "availability" : true
     }
 
