@@ -1,5 +1,12 @@
 // NavBar
-document.querySelector('.nav-bar').innerHTML = `
+let navBar
+let innerNav;
+let menu;
+
+let navHeight;
+let innerNavWidth;
+
+const navBarContent = `
 <div class="nav-logo">
             <a href="./index.html"><img src="./img/nav-logo.png" alt="eDoc24 Logo"></a>
         </div>
@@ -23,6 +30,7 @@ document.querySelector('.nav-bar').innerHTML = `
 
             <div class="nav-list nav-in">
                 <a  class="nav-item green" href="appointments.html"><span>Appointments</span></a>
+                <a  class="nav-item green" href="appointments.html"><span>Appointments</span></a>
                 <a  class="nav-item green" href="specialists.html"><span>Specialists</span></a>
                 <a  class="nav-item blue" href="contact-us.html"><span>Contact</span></a>
                 <a  class="nav-item blue" href="download-app.html"><span>Download App</span></a>
@@ -33,15 +41,32 @@ document.querySelector('.nav-bar').innerHTML = `
         </nav>
 
 `;
+function doNavClick () {
+    menu.classList.toggle('opened');
+    menu.setAttribute('aria-expanded', menu.classList.contains('opened'));
 
-let DomLoaded = false;
+    innerNav.classList.toggle('nav-showed');
 
-const navBar = document.querySelector('.nav-bar');
-const innerNav = document.querySelector('.nav-in');
-const menu = document.querySelector('.menu');
+    if(innerNav.classList.contains('nav-showed')) {
+        innerNav.style.right =  0 + "px";
+    }else {
+        innerNav.style.right =  (- innerNavWidth) + "px";
+    }
+}
 
-let navHeight;
-let innerNavWidth;
+function makeNavBar() {
+    
+    if(document.querySelector('.nav-bar')) {
+        navBar = document.querySelector('.nav-bar');
+        navBar.style.opacity = "0";
+        navBar.innerHTML = navBarContent;
+        innerNav = document.querySelector('.nav-in');
+        menu = document.querySelector('.menu');
+        initSizes();
+        navBar.style.opacity = "1";
+    }
+    
+}
 
 function initSizes() {
     navHeight = navBar.getBoundingClientRect().height;
@@ -52,44 +77,21 @@ function initSizes() {
 
     innerNav.style.right =  (- innerNavWidth) + "px";
 
-    if (window.scrollY > navHeight) {
-        // innerNav.style.height = "100vh";
-        // innerNav.style.top = "0px";
-        // navBar.classList.add('make-fixed');
-        // navBar.style.top = 0;
-    }else {
-        // innerNav.style.top = navHeight + "px";
-        // innerNav.style.height = (window.innerHeight - navHeight) + "px";
-        // navBar.classList.remove('make-fixed');
-    }
-
     let secondChildElement = document.body.children[1];
     secondChildElement.style.marginTop = secondChildElement.style.marginTop + navHeight + "px";
 }
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    DomLoaded = true;
+function resetNavigation() {
     initSizes();
-});
+    closeNavigation();
+}
 
-
-function doNavClick () {
-    initSizes();
-    
-    if(DomLoaded) {
-        menu.classList.toggle('opened');
-        menu.setAttribute('aria-expanded', menu.classList.contains('opened'));
-    
-        innerNav.classList.toggle('nav-showed');
-    
-        if(innerNav.classList.contains('nav-showed')) {
-            innerNav.style.right =  0 + "px";
-        }else {
-            innerNav.style.right =  (- innerNavWidth) + "px";
-        }
+function closeNavigation() {
+    if(menu.classList.contains('opened')) {
+        menu.classList.remove('opened');
+        menu.removeAttribute('aria-expanded', menu.classList.contains('opened'));
+        innerNav.classList.remove('nav-showed');
     }
-
 }
 
 window.addEventListener('resize', function() {
@@ -98,23 +100,18 @@ window.addEventListener('resize', function() {
 
 window.addEventListener('scroll', function () {
     resetNavigation();
-
 })
 
-function resetNavigation() {
-    initSizes();
+window.addEventListener('load', function () {
+    resetNavigation();
+})
 
-    if(menu.classList.contains('opened')) {
-        menu.classList.remove('opened');
-        menu.removeAttribute('aria-expanded', menu.classList.contains('opened'));
-        innerNav.classList.remove('nav-showed');
-    }
-}
 
 // Footer
-document.querySelector('footer').innerHTML =
+let footer;
 
-`    <div class="row">
+const footerContent =`
+<div class="row">
 
 <div class="col-lg-5 col-sm-12 ">
 
@@ -200,6 +197,19 @@ document.querySelector('footer').innerHTML =
 </a>
 </div>
 </div>`;
+
+function makeFooter() {
+    if(document.querySelector('footer')) {
+        footer = document.querySelector('footer');
+        footer.innerHTML = footerContent;
+    }
+}
+
+// DOM Loaded
+document.addEventListener('DOMContentLoaded', () => {
+    makeNavBar();
+    makeFooter();
+});
 
 
 // Redirect to a page (Used with 'onclick' inside HTML element)
