@@ -19,29 +19,20 @@
     }
 }
 
-.ser-round{
-    border-radius: 12px;
 
-}
-
-.ser-round:hover{
-    box-shadow: 0px 0px 4px black;
-
-}
-
-
-#DoctorAppointments,
-#OnlineConsultation,
-#PharmacyServices,
-#EmergencyServices{
+.ser-anime  #DoctorAppointments, 
+.ser-anime  #OnlineConsultation, 
+.ser-anime  #PharmacyServices, 
+.ser-anime  #EmergencyServices 
+{
     animation: slideRight 1s;
 
 }
 
-#MedicalRecordsManagement,
-#LabTestBookings,
-#HealthPackages,
-#HealthInformation{
+.ser-anime #MedicalRecordsManagement,
+.ser-anime #LabTestBookings,
+.ser-anime #HealthPackages,
+.ser-anime #HealthInformation{
     animation: slideLeft 1s;
 
 }

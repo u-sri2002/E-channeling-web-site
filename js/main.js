@@ -44,9 +44,12 @@ function servicesCardSet() {
 
             let serCardTitle = serCardObj.title;
             let serCardImg = serCardObj.img;
+            let serCardId = serCardTitle.replace(/\s+/g, '');
 
             let serCard = document.createElement('div');
+            serCard.id = serCardId;
             serCard.classList.add('ser-card');
+            serCard.classList.add('ser-round');
 
             let speCardFormat = `
             <img class="ser-card-img" src="./img/${serCardImg}-vector.jpeg" alt="${serCardTitle}">
