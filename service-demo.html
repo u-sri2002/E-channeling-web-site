@@ -15,97 +15,38 @@
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
 
+    <link rel="stylesheet" href="./css/service-demo.css">
+
 </head>
 <body>
 
     <!-- Services Section -->
     <section class="sector ser spe">
-
         <h3 class="sector-title">Services</h3>
         <div class="ser-card-container"></div>
-
     </section>
 
 
 
+<js>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Blocks JS -->
     <script src="./partials/blocks.js"></script>
 
     <!-- Data JS -->
-    <script src="./js/data.js"></script>
+    <!-- <script src="./js/data.js"></script> -->
+    <script src="./js/service-demo.js"></script>
 
     <!-- Main JS -->
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Slick JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Slick Slider -->
-    <script type="text/javascript">
-        $(document).ready(function(){       
-            $('.ad-fade').slick({
-                dots: true,
-                infinite: true,
-                speed: 700,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                prevArrow: $('.prev'),
-                nextArrow: $('.next'),
-            });
-        });
-    </script>
+</js>
 
-    <!-- Count on scroll -->
-    <script>
-        $(document).ready(function() {
-            function isElementInViewport(el) {
-                var rect = el.getBoundingClientRect();
-                return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                );
-            }
-
-            function animateCounter($element) {
-                var countTo = $element.data('count');
-                $({ countNum: $element.text() }).animate({
-                    countNum: countTo
-                },
-                {
-                    duration: 1000,
-                    easing: 'swing',
-                    step: function() {
-                        $element.text(Math.floor(this.countNum));
-                    },
-                    complete: function() {
-                        $element.text(this.countNum);
-                    }
-                });
-            }
-
-            function checkCounters() {
-                $('.counter').each(function() {
-                    var $element = $(this);
-                    if (isElementInViewport(this) && !$element.hasClass('counted')) {
-                        $element.addClass('counted');
-                        animateCounter($element);
-                    }
-                });
-            }
-
-            $(window).on('scroll', checkCounters);
-            $(window).on('load', checkCounters);
-
-        });
-    </script>
 
 </body>
 </html>
