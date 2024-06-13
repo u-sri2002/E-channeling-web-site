@@ -52,7 +52,7 @@ function servicesCardSet() {
             serCard.classList.add('ser-round');
 
             let speCardFormat = `
-            <img class="ser-card-img" src="./img/${serCardImg}-vector.jpeg" alt="${serCardTitle}">
+            <img class="ser-card-img" src="./img/card-images/${serCardImg}.jpg" alt="${serCardTitle}">
             <h6 class="ser-card-title">${serCardTitle}</h6>`;
 
             serCard.innerHTML = speCardFormat;

@@ -109,33 +109,33 @@ const speData = [
 const serData = [
     {
         "title": "Doctor Appointments",
-        "img": "Cardiologist"
+        "img": "Appointments"
     },
     {
         "title": "Online Consultation",
-        "img": "Cardiologist"
+        "img": "Consultation"
     },
     {
         "title": "Medical Records Management",
-        "img": "Cardiologist"
+        "img": "Medical Records"
     },
     {
         "title": "Lab Test Bookings",
-        "img": "Cardiologist"
+        "img": "Lab Test"
     },
     {
         "title": "Pharmacy Services",
-        "img": "Cardiologist"
+        "img": "Pharmacy"
     },
     {
         "title": "Emergency Services",
-        "img": "Cardiologist"
+        "img": "Emergency"
     },
     {
         "title": "Health Packages",
-        "img": "Cardiologist"
+        "img": "Packages"
     },{
         "title": "Health Information",
-        "img": "Cardiologist"
+        "img": "Health Information"
     }
 ];
