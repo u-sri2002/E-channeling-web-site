@@ -2,7 +2,7 @@
 .hero {
     display: grid;
     grid-template-columns: 65% 35%;
-    padding: 2.4rem 2.4rem 0 2.4rem;
+    padding: 3rem 2.4rem 0 2.4rem;
     background-image: linear-gradient(to right, #f3fff5, #e4eeff);
 }
 
@@ -25,7 +25,7 @@
     font-weight: var(--fw-medium);
     line-height: 1.6;
     text-align: justify;
-    margin: 2.2rem 0;
+    margin: 2.5rem 0;
 }
 
 .hero .hero-right {
@@ -43,6 +43,7 @@
 
 .hero .hero-right img {
     height: 24rem;
+    margin-top: 4rem;
 }
 /* Header >> */
 
