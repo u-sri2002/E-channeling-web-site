@@ -257,12 +257,13 @@
 }
 
 .spe-card-img {
-    width: 8rem;
+    height: 12rem;
 }
 
 .spe-card-title {
-    font-weight: var(--fw-medium);
-    font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+    font-size: 1.4rem;
+    color: #3A6EA5;
     margin: 1rem auto;
 }
 

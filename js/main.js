@@ -15,8 +15,8 @@ function specialistsCardSet() {
             speCard.setAttribute('onclick', `redirectToPageId('specialists.html', 'doc-table-${speCardTitle.toLowerCase()}')`);
 
             let speCardFormat = `
-                    <img class="spe-card-img" src="./img/Cardiologist-vector.jpeg" alt="${speCardTitle}">
                     <h6 class="spe-card-title">${speCardTitle}</h6>
+                    <img class="spe-card-img" src="./img/card-images/${speCardTitle}.jpg" alt="${speCardTitle}">
                     <p class="spe-card-desc">${speCardDesc}</p>
                     <img class="see-more-arrow" src="./img/see-more-arrow.svg" alt="see more">
                     `;
