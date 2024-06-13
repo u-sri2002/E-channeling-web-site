@@ -88,3 +88,7 @@ body{
     }
 }
 
+small{
+    margin: 10% 0%;
+    padding-left: 1%;
+}

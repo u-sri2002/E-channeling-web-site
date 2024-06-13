@@ -38,37 +38,51 @@
 
     <div class="container">
 
-        <form action="/" method="post">
+        <form action="/" method="post" id="app-form">
             <div class="container a-form">
                 <div class="row">
     
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 pd-mobile">
     
                             <!-- doctor name  -->
-                            <label for="doc-name">Doctor</label> <br>
-                            <select id="doc-name" name="doc-name" class="form-control box">
-                            </select> 
-    
+                             <div class="app-form-label">
+                                <label for="doc-name">Doctor</label> <br>
+                                <select id="doc-name" name="doc-name" class="form-control box"> </select>
+                                <i></i>
+                                <small>error_msg</small>
+                             </div>
+
                             <!-- Specialization -->
-                            <label for="specialty">Specialization</label> <br>
-                            <select id="specialty" name="specialty" class="form-control box">
-                            </select> 
-            
+                             <div class="app-form-label">
+                                <label for="specialty">Specialization</label> <br>
+                                <select id="specialty" name="specialty" class="form-control box" > </select>
+                                <i></i>
+                                <small>error_msg</small>
+                             </div>
+             
                     </div>
         
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 pd-mobile">
     
-                            <!-- date  -->
+                        <!-- date  -->
+                        <div class="app-form-label">
                             <label for="date">Date</label>
-                            <input type="date" class="form-control box">
-    
+                            <input type="date" class="form-control box" id="date" >
+                            <i></i>
+                            <small>error_msg</small>
+                        </div>
+
                             <!-- session time  -->
+                        <div class="app-form-label">
                             <label for="time">Session Time</label>
                             <select name="time" id="time" class="form-control box">
                                 <option value="Any">Any</option>
                                 <option value="morning">Morning Session</option>
                                 <option value="evening">Evening Session</option>
                             </select>
+                            <i></i>
+                            <small>error_msg</small>
+                        </div>                
     
                     </div>
     
@@ -126,6 +140,9 @@
 
     <!-- Data JS -->
     <script src="./js/data.js"></script>
+
+    <!-- appointment JS  -->
+     <script src="./js/appointments.js"></script>
 
     <script>
 
