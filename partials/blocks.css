@@ -38,7 +38,7 @@ body {
     outline: none;
     box-sizing: border-box;
     text-decoration: none;
-    font-weight: 200;
+    /* font-weight: 200; */
     opacity: inherit;
 }
 /* CSS Reset >> */
@@ -108,8 +108,30 @@ body {
     left: 0;
 }
 
+.nav-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo a {
+    text-decoration: none;
+}
+
 .nav-logo img {
     width: 3.4rem;
+}
+
+.logo-text {
+    font-size: 1.4rem;
+    color: var(--clr-dark-green);
+    font-weight: var(--fw-extra-bold);
+}
+
+.nav-logo .logo-text .contrast{
+    color: var(--clr-blue);
 }
 
 .top-nav {
