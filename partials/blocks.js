@@ -1,11 +1,13 @@
-// NavBar
-let navBar
+// NavBar elements
+let navBar;
 let innerNav;
 let menu;
 
+// Navbar values
 let navHeight;
 let innerNavWidth;
 
+// Navbar content
 const navBarContent = `
 <div class="nav-logo">
             <a href="./index.html">
@@ -40,13 +42,15 @@ const navBarContent = `
                 <a  class="nav-item green" href="specialists.html"><span>Specialists</span></a>
                 <a  class="nav-item blue" href="contact-us.html"><span>Contact</span></a>
                 <a  class="nav-item blue" href="download-app.html"><span>Download App</span></a>
-                <a  class="nav-item blue" href="register-as-doctor.html"><span>Register as a Specialist</span></a>
                 <a  class="nav-item blue" href="signup.html"><span>Account</span></a>
+                <a  class="nav-item blue" href="register-as-doctor.html"><span>Register as a Specialist</span></a>
             </div>
 
         </nav>
 
 `;
+
+// Simulate navbar clicks
 function doNavClick () {
     menu.classList.toggle('opened');
     menu.setAttribute('aria-expanded', menu.classList.contains('opened'));
@@ -60,6 +64,7 @@ function doNavClick () {
     }
 }
 
+// Initialize navbar
 function makeNavBar() {
     
     if(document.querySelector('.nav-bar')) {
@@ -74,7 +79,9 @@ function makeNavBar() {
     
 }
 
+// Initialize navbar sizes
 function initSizes() {
+    
     navHeight = navBar.getBoundingClientRect().height;
     innerNavWidth = innerNav.getBoundingClientRect().width;
 
@@ -87,11 +94,13 @@ function initSizes() {
     secondChildElement.style.marginTop = secondChildElement.style.marginTop + navHeight + "px";
 }
 
+// Reset navbar
 function resetNavigation() {
     initSizes();
     closeNavigation();
 }
 
+// Close navbar
 function closeNavigation() {
     if(menu.classList.contains('opened')) {
         menu.classList.remove('opened');
@@ -100,15 +109,20 @@ function closeNavigation() {
     }
 }
 
+// Reset navbar on window resize
 window.addEventListener('resize', function() {
+    makeNavBar();
     resetNavigation();
 });
 
+// Reset navbar on scroll
 window.addEventListener('scroll', function () {
     resetNavigation();
 })
 
+// Make navbar on window load
 window.addEventListener('load', function () {
+    makeNavBar();
     resetNavigation();
 })
 
@@ -116,6 +130,7 @@ window.addEventListener('load', function () {
 // Footer
 let footer;
 
+// Footer content
 const footerContent =`
         <div class="row">
 
@@ -151,14 +166,14 @@ const footerContent =`
                 <h4 class="f-heading"><a href="./contactUs.html">Contacts</a></h4>
             
                 <p>
-                     OPD: +94 81 562 8800<br>
-                     Surgical: +94 11 562 4400 <br>
-                     Clincs: +94 41 860 1501<br>
-                     Pharmacy: +94 91 574 0640<br>
-                     Laboratories: +94 11 562 3456<br>
-                     AOI Cancer Centre: +94 11 562 4466<br>
-                     Emergency Department: +94 11 562 3300<br>
-                     Research & Education: +94 11 562 3377<br>
+                    OPD: +94 81 562 8800<br>
+                    Surgical: +94 11 562 4400 <br>
+                    Clincs: +94 41 860 1501<br>
+                    Pharmacy: +94 91 574 0640<br>
+                    Laboratories: +94 11 562 3456<br>
+                    AOI Cancer Centre: +94 11 562 4466<br>
+                    Emergency Department: +94 11 562 3300<br>
+                    Research & Education: +94 11 562 3377<br>
                 </p>
             </div>
             
@@ -204,6 +219,7 @@ const footerContent =`
             </div>
         </div>`;
 
+// Initialize footer
 function makeFooter() {
     if(document.querySelector('footer')) {
         footer = document.querySelector('footer');
@@ -211,7 +227,7 @@ function makeFooter() {
     }
 }
 
-// DOM Loaded
+// DOM loaded events
 document.addEventListener('DOMContentLoaded', () => {
     makeNavBar();
     makeFooter();
@@ -231,6 +247,7 @@ function redirectToPage(page) {
     }
 }
 
+// Redirect to an id
 function redirectToPageId(page, id) {
     
     // For Github Pages (Remove for pure project)

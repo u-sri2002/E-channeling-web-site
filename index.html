@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to eDOC24</title>
-
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <!-- Google font -->
@@ -20,7 +19,7 @@
     <!-- Main CSS-->
     <link rel="stylesheet" href="./css/main.css">
     <!-- Animation CSS  -->
-     <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/animations.css">
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"/>
 
@@ -197,7 +196,7 @@
         });
     </script>
 
-    <!-- Count on scroll -->
+    <!-- Animations on scroll -->
     <script>
         $(document).ready(function() {
             function isElementInViewport(el) {
@@ -210,6 +209,7 @@
                 );
             }
 
+            // Counter animations
             function animateCounter($element) {
                 var countTo = $element.data('count');
                 $({ countNum: $element.text() }).animate({
@@ -237,27 +237,9 @@
                 });
             }
 
-            $(window).on('scroll', checkCounters);
-            $(window).on('load', checkCounters);
 
-        });
-        
-    </script>
-
-    <script>
-        const serviceDiv = $('#services');
-        $(document).ready(function() {
-            function isElementInViewport(el) {
-                var rect = el.getBoundingClientRect();
-                return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                );
-            }
-
-           
+            // Services card animation
+            const serviceDiv = $('#services');
             function checkServices() {
                 $('#services').each(function() {
                     var $element = $(this);
@@ -267,11 +249,13 @@
                 });
             }
 
+            $(window).on('scroll', checkCounters);
+            $(window).on('load', checkCounters);
+
             $(window).on('scroll', checkServices);
             $(window).on('load', checkServices);
 
         });
-
     </script>
 
 </body>
