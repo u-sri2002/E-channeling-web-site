@@ -43,7 +43,7 @@ const navBarContent = `
                 <a  class="nav-item blue" href="contact-us.html"><span>Contact</span></a>
                 <a  class="nav-item blue" href="download-app.html"><span>Download App</span></a>
                 <a  class="nav-item blue" href="signup.html"><span>Account</span></a>
-                <a  class="nav-item blue" href="register-as-doctor.html"><span>Register as a Specialist</span></a>
+                <a  class="nav-item blue" href="register-as-doctor.html"><span>Register As a Specialist</span></a>
             </div>
 
         </nav>
