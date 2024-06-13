@@ -11,9 +11,9 @@ h1{
 
 .p01{
     font-size: 1rem;
-    color: #e7dede;
+    color: #ffffff;
     padding:0% 3%;
-    font-weight: var(--fw-medium);
+    font-weight: var(--fw-semi-bold);
 }
 
 @media (min-width: 760px){
@@ -24,9 +24,8 @@ h1{
 
 .p02{
     font-size: 1.1rem;
-    color: #01204E;
-    font-weight: 400;
-    font-style: italic;
+    color: #ffffff;
+    font-weight: var(--fw-medium);
 }
 
 #con-description{
@@ -45,24 +44,23 @@ h1{
 .icon{
     min-width: 60px;
     height: 60px;
-    background: #c0c0c0ba;
+    background: #105297ba;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    /* font-size: 22px; */
 }
 
 .icon svg{
     height: 100%;
-    fill: black;
+    fill: rgb(255, 255, 255);
 }
 
 .box .text{
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color:#000000;
+    color: #01204E;
     flex-direction: column;
     font-weight: 300;
 }
@@ -70,12 +68,11 @@ h1{
 .box .text h3{
     font-weight: 400;
     font-size: 25px;
-    color: white;
-    text-decoration: underline;
+    color: #fff;
 }
 
 #con-form{
-    background-image: linear-gradient(to right, #0559b9, #33CC82);
+    background-color: #fff;
     padding: 8%;
     margin: 5% 4% 5% 0%; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -83,12 +80,15 @@ h1{
 }
 
 #con-form h2{
-    color: white;
-    margin-bottom: 0;
+    color: #265bab;
+    margin-bottom: 5px;
+    font-weight: var(--fw-bold);
 }
 
 #con-form p{
-    color: white;
+    color: #265bab;
+    font-weight: var(--fw-semi-bold);
+    font-size: 1.2rem;
 }
 
 .inputbox{
@@ -102,19 +102,18 @@ h1{
 
 .inputbox input, .inputbox textarea{
     width:100%;
-    padding: 5px 0;
+    padding: 5px 10px;
     font-size: 17px;
-    margin: 10px 0;
+    margin: 5px 0;
     border: none;
-    border-bottom: 2px solid #333;
+    border: 1px solid #696969;
     outline: none;
     resize: none;
 }
 
 .inputbox button{
-    background-color: #1da8ff;
+    background-color: var(--clr-blue);
     color: white;
-    border: 2px ridge #d2d2d2; /* Added border property */
     cursor: pointer;
     padding: auto;
     margin: 3% 0;
@@ -123,6 +122,13 @@ h1{
 
 .inputbox button:hover {
     color: #fff;
-    background: #08d4fd; /* Change background on hover */
-    border-color: #28a745; /* Match border color */
+    background-color: var(--clr-dark-blue);
+}
+
+.label, .warn {
+    font-weight: var(--fw-semi-bold);
+}
+
+.label {
+    margin-top: 15px;
 }

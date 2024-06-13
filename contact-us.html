@@ -93,23 +93,26 @@
                 
                 <div class="container" id="con-form" >
                     <form id="form" class="form"  > 
-                        <h2>Send Message</h2>
-                        <p>Stay Connected</p>
+                        <h2>Send Your Message</h2>
+                        <p>Stay Connected!</p>
+                            <label  class="label" for="name">Your name</label>
                             <div class="inputbox">
-                                <input type="text" id="name" placeholder="Enter username" class="form-control"/>
+                                <input type="text" id="name" placeholder="Enter your name" class="form-control" autofocus/>
                                 <!-- <span>Full Name</span> -->
-                                <span style="color:#eb224c" id="name_error"></span>
+                                <span class="warn" style="color:#eb224c" id="name_error"></span>
                             </div>
         
                             <div class="inputbox">
-                                <input type="text" id="email" placeholder="Enter email" class="form-control"/>
+                                <label  class="label" for="email">Your email</label>
+                                <input type="text" id="email" placeholder="Enter your email" class="form-control"/>
                                 <!-- <span>Email</span> -->
-                                <span style="color:#eb224c" id="email_error"></span>
+                                <span class="warn" style="color:#eb224c" id="email_error"></span>
                             </div>
         
                             <div class="inputbox">
-                                <textarea  placeholder="Type Your Text Here" required="required" class="form-control"></textarea>                                             
-                                <span></span>
+                                <label  class="label" for="message">Your message</label>
+                                <textarea  id="message" placeholder="Type your message here" required="required" class="form-control"></textarea>                                             
+                                <spanclass="warn" ></spanclass=>
                             </div>
                             
                             <div class="inputbox">
