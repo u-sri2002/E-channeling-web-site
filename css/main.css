@@ -4,12 +4,14 @@
     grid-template-columns: 65% 35%;
     padding: 3rem 2.4rem 0 2.4rem;
     background-image: linear-gradient(to right, #f3fff5, #e4eeff);
+    margin: 5rem 0 0 0;
 }
 
 .hero .hero-left {
     display: flex;
     flex-direction: column;
     align-items: left;
+    margin: 3rem 0 2rem 3rem;
 }
 
 .hero .hero-left h1 {
@@ -17,13 +19,15 @@
     font-size: 2.3rem;
     font-weight: var(--fw-extra-bold);
     line-height: 1.4;
+    margin-bottom: 4rem;
+
 }
 
 .hero .hero-left p {
     color: rgba(0, 0, 0, 0.758);
     font-size: 1.2rem;
     font-weight: var(--fw-medium);
-    line-height: 1.6;
+    line-height: 2rem;
     text-align: justify;
     margin: 2.5rem 0;
 }
@@ -33,6 +37,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-top: 3rem ;
+
 }
 
 .hero .hero-right .hotline {
@@ -42,8 +48,13 @@
 }
 
 .hero .hero-right img {
+    margin-top: 5rem;
     height: 24rem;
     margin-top: 4rem;
+}
+
+.hero-btn-section button{
+    margin: 2rem .5rem 0 0;
 }
 /* Header >> */
 
@@ -510,6 +521,9 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 0.6rem;
     }
+    .hero{
+        height: auto;
+    }
     .hero .hero-left {
         margin-bottom: 0.5rem;
     }
@@ -549,6 +563,7 @@
 @media only screen and (max-width: 768px) {
     .hero {
         display: block;
+        height: auto;
     }
     .hero .hero-left {
         margin-bottom: 1.4rem;
