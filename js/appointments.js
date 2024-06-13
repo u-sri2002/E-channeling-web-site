@@ -12,7 +12,7 @@ function sendErrorFor(input, message){
     smallTag.innerHTML = message;
 
     //send styles to error
-    // input.parentElement.className = "acc-form-label form-fields error";
+    input.parentElement.className = "app-form-label";
 
     input.parentElement.querySelector("i").innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
@@ -22,7 +22,7 @@ function sendErrorFor(input, message){
 
 //send styles to success
 function sendSuccessFor(input){
-    input.parentElement.className = "acc-form-label form-fields success hide-text"
+    input.parentElement.className = "app-form-label hide-text"
 }
 
 
@@ -90,7 +90,7 @@ function validateFormInputs(){
 
     // speciality
     if( specialtyValue === '-- All Specializations'){
-        sendErrorFor(specialty, "Fuck you");
+        sendErrorFor(specialty, "Please choose a specialty");
     }
     else{
         sendSuccessFor(specialty);
@@ -100,7 +100,7 @@ function validateFormInputs(){
 
     //time
     if (timeValue === 'Any'){
-        sendErrorFor(time, "Fuck you");
+        sendErrorFor(time, "Please choose a session time");
     }
     else{
         sendSuccessFor(time);

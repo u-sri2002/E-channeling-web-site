@@ -88,7 +88,18 @@ body{
     }
 }
 
+/* validation  */
+
+
 small{
-    margin: 10% 0%;
-    padding-left: 1%;
+    margin: 0%;
+    padding-left: 1px;
+}
+
+.hide-text small{
+    visibility: hidden;
+}
+
+.hide-text i{
+    visibility: hidden;
 }
