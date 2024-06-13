@@ -8,7 +8,7 @@ let innerNavWidth;
 
 const navBarContent = `
 <div class="nav-logo">
-            <a href="./index.html"><img src="./img/nav-logo.png" alt="eDoc24 Logo"></a>
+            <a href="./index.html"><img src="./img/nav-logo.webp" alt="eDOC24 Logo"></a>
         </div>
 
         <nav class="top-nav">
