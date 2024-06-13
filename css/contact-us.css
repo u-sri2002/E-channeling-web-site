@@ -80,13 +80,13 @@ h1{
 }
 
 #con-form h2{
-    color: #265bab;
+    color: #105297ba;
     margin-bottom: 5px;
     font-weight: var(--fw-bold);
 }
 
 #con-form p{
-    color: #265bab;
+    color: #105297ba;
     font-weight: var(--fw-semi-bold);
     font-size: 1.2rem;
 }
@@ -106,7 +106,7 @@ h1{
     font-size: 17px;
     margin: 5px 0;
     border: none;
-    border: 1px solid #696969;
+    border: 1px solid #4f4f4f52;
     outline: none;
     resize: none;
 }
