@@ -12,7 +12,7 @@ function sendErrorFor(input, message){
     smallTag.innerHTML = message;
 
     //send styles to error
-    input.parentElement.className = "acc-form-label form-fields error";
+    // input.parentElement.className = "acc-form-label form-fields error";
 
     input.parentElement.querySelector("i").innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
@@ -78,7 +78,7 @@ function validateFormInputs(){
 
     const doctorNameValue = doctorName.value;
     const specialtyValue = specialty.value;
-    const timeValue = doctorName.value;
+    const timeValue = time.value;
 
     
     if( doctorNameValue === '-- All Doctors'){
@@ -88,17 +88,23 @@ function validateFormInputs(){
         sendSuccessFor(doctorName);
     }
 
-    //date validation
-    dateValidation();
-
-    //speciality
+    // speciality
     if( specialtyValue === '-- All Specializations'){
-        sendErrorFor(doctorName, "Please choose a specialty");
+        sendErrorFor(specialty, "Fuck you");
     }
     else{
         sendSuccessFor(specialty);
     }
 
+    dateValidation();
+
+    //time
+    if (timeValue === 'Any'){
+        sendErrorFor(time, "Fuck you");
+    }
+    else{
+        sendSuccessFor(time);
+    }
           
 }
 
