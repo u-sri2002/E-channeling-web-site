@@ -5,8 +5,17 @@ const mobile = document.getElementById("mobile");
 const experience = document.getElementById("experience");
 const password = document.getElementById("password");
 const residence = document.getElementById("residence");
+const specials = document.getElementById("specialty")
 const uploadFile = document.getElementById("uploadFile")
 
+var isValidName = false;
+var isValidEmail = false;
+var isValidMobile = false;
+var isValidExp = false;
+var isValidPlace = false;
+var isValidPassword = false;
+var isValidSpecial = false;
+var isFilesUploaded = false;
 
 // function to identify the errors
 function sendErrorFor(input, message){
@@ -49,6 +58,7 @@ function validateMobile(){
     }
     else{
         sendSuccessFor(mobile);
+        isValidMobile = true;
     }
 }
 
@@ -78,6 +88,7 @@ function validatePassword() {
         sendErrorFor(password, "Password must contain at least one special character");
     } else {
         sendSuccessFor(password);
+        isValidPassword = true;
     }
 }
 
@@ -99,6 +110,7 @@ function formInputsValidation(){
     else{
         //send success
         sendSuccessFor(userName);
+        isValidName = true;
     }
 
 
@@ -112,6 +124,7 @@ function formInputsValidation(){
       }
         else{
             sendSuccessFor(email);
+            isValidEmail = true;
         }
     }
 
@@ -133,6 +146,7 @@ function formInputsValidation(){
         }
         else{
             sendSuccessFor(experience);
+            isValidExp = true;
         }
     }
 
@@ -143,12 +157,34 @@ function formInputsValidation(){
     }
     else{
         sendSuccessFor(residence);
+        isValidPlace = true;
     }
 
     // call function for password validation 
     validatePassword();
 
+    if( specials.value === 'all'){
+        sendErrorFor(specials, "Please fill your specialization");
+    }
+    else{
+        sendSuccessFor(specials);
+        isValidSpecial = true;
+    }
+
+    //check liscense uploaded
     uploadFile.setAttribute('required', '');
+    if( uploadFile.files.length <= 0){
+        sendErrorFor(uploadFile, "Please upload your liscence");
+    }
+    else{
+        sendSuccessFor(uploadFile);
+        isFilesUploaded = true;
+    }
+
+    // send alert to formpage when submission is success
+    if (isValidName && isValidEmail && isValidMobile && isValidExp && isValidPlace && isValidPassword && isFilesUploaded && isValidSpecial) {
+        alert("Submission success..!");
+    }
 }
 
 
