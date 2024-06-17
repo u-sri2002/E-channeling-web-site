@@ -3,6 +3,9 @@ const userName = document.getElementById("name");
 const mobile = document.getElementById("mobile");
 const password = document.getElementById("password");
 
+let isUsernameValid = false;
+let isMobileValid = false;
+let isPasswordValid = false;
 
 // function for identify the errors
 function sendErrorFor(input, message){
@@ -38,6 +41,7 @@ function validateMobile(){
     }
     else{
         sendSuccessFor(mobile);
+        isMobileValid = true;
     }
 }
 
@@ -66,11 +70,14 @@ function validatePassword() {
         sendErrorFor(password, "Password must contain at least one special character");
     } else {
         sendSuccessFor(password);
+        isPasswordValid = true;
     }
 }
 
 
 function formInputsValidation(){
+
+
     // get the values from inputs 
     let UserNameValue = userName.value.trim();
 
@@ -82,6 +89,7 @@ function formInputsValidation(){
     else{
         //send success
         sendSuccessFor(userName);
+        isUsernameValid = true
     }
 
 
@@ -91,6 +99,10 @@ function formInputsValidation(){
        
     // call function for password validation 
     validatePassword(); 
+
+    if(isUsernameValid && isMobileValid && isPasswordValid){
+        alert("Submission success");
+    }
 }
 
 
