@@ -13,6 +13,10 @@ function redirectToLogin(event){
     window.location.href = './login.html';
 }
 
+var isValidName = false;
+var isValidEmail = false;
+var isValidMobile = false;
+var isValidPassword = false;
 
 // function for identify errors
 function sendErrorFor(input, message){
@@ -54,6 +58,7 @@ function validateMobile(){
     }
     else{
         sendSuccessFor(mobile);
+        isValidMobile = true;
     }
 }
 
@@ -82,6 +87,7 @@ function validatePassword() {
         sendErrorFor(password, "Password must contain at least one special character");
     } else {
         sendSuccessFor(password);
+        isValidPassword = true;
     }
 }
 
@@ -100,6 +106,7 @@ function formInputsValidation(){
     else{
         //send success
         sendSuccessFor(userName);
+        isValidName = true;
     }
 
 
@@ -113,6 +120,7 @@ function formInputsValidation(){
       }
         else{
             sendSuccessFor(email);
+            isValidEmail = true;
         }
     }
 
@@ -123,6 +131,10 @@ function formInputsValidation(){
     // call function for password validation 
     validatePassword();
 
+    // send alert to formpage when submission is success
+    if (isValidName && isValidEmail && isValidMobile && isValidPassword) {
+        alert("Submission success..!");
+    }
   
 }
 
