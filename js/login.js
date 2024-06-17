@@ -98,6 +98,7 @@ function formInputsValidation(){
     // call function for password validation 
     validatePassword(); 
 
+    // send alert to formpage when submission is success
     if (isValidName && isValidMobile && isValidPassword) {
         alert("Submission success..!");
     }
